@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/tmp/2a5d597221414a7a91bb7fd8eb90aa32.lib ",
+   "modules": {
+      "\\eth_phy_1g": {
+         "num_wires":         61,
+         "num_wire_bits":     105,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         67,
+         "area":              210.201600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 13,
+            "$_MUX_": 7,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 9,
+            "$_ORNOT_": 2,
+            "$_OR_": 25,
+            "sky130_fd_sc_hd__dfrtp_2": 8
+         }
+      }
+   },
+      "design": {
+         "num_wires":         61,
+         "num_wire_bits":     105,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         67,
+         "area":              210.201600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 13,
+            "$_MUX_": 7,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 9,
+            "$_ORNOT_": 2,
+            "$_OR_": 25,
+            "sky130_fd_sc_hd__dfrtp_2": 8
+         }
+      }
+}
+

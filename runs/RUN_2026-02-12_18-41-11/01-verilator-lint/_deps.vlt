@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/g/my_designs/pm32/runs/RUN_2026-02-12_18-41-11/tmp/098055310133470387577688f61e20fa.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/g/my_designs/pm32/runs/RUN_2026-02-12_18-41-11/tmp/098055310133470387577688f61e20fa.bb.v"

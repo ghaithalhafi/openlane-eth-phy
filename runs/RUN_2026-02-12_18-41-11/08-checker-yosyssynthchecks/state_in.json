@@ -1,0 +1,31 @@
+{
+    "nl": "/home/g/my_designs/pm32/runs/RUN_2026-02-12_18-41-11/06-yosys-synthesis/counter32.nl.v",
+    "pnl": null,
+    "pnl-sdf-friendly": null,
+    "pnl-npc": null,
+    "def": null,
+    "lef": null,
+    "openroad-lef": null,
+    "odb": null,
+    "sdc": null,
+    "sdf": null,
+    "spef": null,
+    "lib": null,
+    "spice": null,
+    "mag": null,
+    "gds": null,
+    "mag_gds": null,
+    "klayout_gds": null,
+    "json_h": "/home/g/my_designs/pm32/runs/RUN_2026-02-12_18-41-11/05-yosys-jsonheader/counter32.h.json",
+    "vh": null,
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 200,
+        "design__instance__area": 2192.1024,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

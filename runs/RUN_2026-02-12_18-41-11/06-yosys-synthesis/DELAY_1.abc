@@ -1,0 +1,21 @@
+fx
+mfs
+strash
+drf -l
+balance; drw -l; drf -l; balance; drw -l; drw -l -z; balance; drf -l -z; drw -l -z; balance
+retime {D} -M 6
+scleanup
+fraig_store; balance; fraig_store; balance; drw -l; drf -l; balance; drw -l; drw -l -z; balance; drf -l -z; drw -l -z; balance; fraig_store; balance; drw -l; drf -l; balance; drw -l; drw -l -z; balance; drf -l -z; drw -l -z; balance; fraig_store; balance; drw -l; drf -l; balance; drw -l; drw -l -z; balance; drf -l -z; drw -l -z; balance; fraig_store; fraig_restore
+map -p -B 0.2 -A 0.9 -M 0
+fraig_store; balance; fraig_store; balance; drw -l; drf -l; balance; drw -l; drw -l -z; balance; drf -l -z; drw -l -z; balance; fraig_store; balance; drw -l; drf -l; balance; drw -l; drw -l -z; balance; drf -l -z; drw -l -z; balance; fraig_store; balance; drw -l; drf -l; balance; drw -l; drw -l -z; balance; drf -l -z; drw -l -z; balance; fraig_store; fraig_restore
+map
+
+retime {D}
+&get -n
+&st
+&dch
+&nf
+&put
+
+stime -p
+print_stats -m

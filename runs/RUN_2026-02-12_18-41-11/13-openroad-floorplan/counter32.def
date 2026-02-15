@@ -1,0 +1,621 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN counter32 ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 96520 107240 ) ;
+ROW ROW_0 unithd 5520 10880 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 5520 13600 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 5520 16320 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 5520 19040 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 5520 21760 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 5520 24480 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 5520 27200 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_7 unithd 5520 29920 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_8 unithd 5520 32640 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_9 unithd 5520 35360 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_10 unithd 5520 38080 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_11 unithd 5520 40800 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_12 unithd 5520 43520 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_13 unithd 5520 46240 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_14 unithd 5520 48960 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_15 unithd 5520 51680 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_16 unithd 5520 54400 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_17 unithd 5520 57120 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_18 unithd 5520 59840 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_19 unithd 5520 62560 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_20 unithd 5520 65280 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_21 unithd 5520 68000 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_22 unithd 5520 70720 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_23 unithd 5520 73440 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_24 unithd 5520 76160 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_25 unithd 5520 78880 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_26 unithd 5520 81600 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_27 unithd 5520 84320 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_28 unithd 5520 87040 N DO 185 BY 1 STEP 460 0 ;
+ROW ROW_29 unithd 5520 89760 FS DO 185 BY 1 STEP 460 0 ;
+ROW ROW_30 unithd 5520 92480 N DO 185 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 210 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 315 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 284 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 315 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 210 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 233 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 142 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 157 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 105 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 116 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 28 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 31 STEP 3400 LAYER met5 ;
+COMPONENTS 200 ;
+    - _168_ sky130_fd_sc_hd__nand2_2 ;
+    - _169_ sky130_fd_sc_hd__nand4_2 ;
+    - _170_ sky130_fd_sc_hd__nor2_2 ;
+    - _171_ sky130_fd_sc_hd__nor4_2 ;
+    - _172_ sky130_fd_sc_hd__and2_2 ;
+    - _173_ sky130_fd_sc_hd__nand2_2 ;
+    - _174_ sky130_fd_sc_hd__nand4_2 ;
+    - _175_ sky130_fd_sc_hd__and3_2 ;
+    - _176_ sky130_fd_sc_hd__nand3_2 ;
+    - _177_ sky130_fd_sc_hd__nand4_2 ;
+    - _178_ sky130_fd_sc_hd__nor2_2 ;
+    - _179_ sky130_fd_sc_hd__or2_2 ;
+    - _180_ sky130_fd_sc_hd__and2_2 ;
+    - _181_ sky130_fd_sc_hd__and4_2 ;
+    - _182_ sky130_fd_sc_hd__nand4_2 ;
+    - _183_ sky130_fd_sc_hd__and2_2 ;
+    - _184_ sky130_fd_sc_hd__and4_2 ;
+    - _185_ sky130_fd_sc_hd__nand2_2 ;
+    - _186_ sky130_fd_sc_hd__and2_2 ;
+    - _187_ sky130_fd_sc_hd__nand3_2 ;
+    - _188_ sky130_fd_sc_hd__nand4_2 ;
+    - _189_ sky130_fd_sc_hd__and3_2 ;
+    - _190_ sky130_fd_sc_hd__nand4_2 ;
+    - _191_ sky130_fd_sc_hd__nor2_2 ;
+    - _192_ sky130_fd_sc_hd__nand2_2 ;
+    - _193_ sky130_fd_sc_hd__nand4_2 ;
+    - _194_ sky130_fd_sc_hd__nor2_2 ;
+    - _195_ sky130_fd_sc_hd__nor3b_2 ;
+    - _196_ sky130_fd_sc_hd__nand4_2 ;
+    - _197_ sky130_fd_sc_hd__a21oi_2 ;
+    - _198_ sky130_fd_sc_hd__nand4_2 ;
+    - _199_ sky130_fd_sc_hd__a31o_2 ;
+    - _200_ sky130_fd_sc_hd__nor2_2 ;
+    - _201_ sky130_fd_sc_hd__a31oi_2 ;
+    - _202_ sky130_fd_sc_hd__a31o_2 ;
+    - _203_ sky130_fd_sc_hd__nor2_2 ;
+    - _204_ sky130_fd_sc_hd__a31oi_2 ;
+    - _205_ sky130_fd_sc_hd__nand4_2 ;
+    - _206_ sky130_fd_sc_hd__nand2_2 ;
+    - _207_ sky130_fd_sc_hd__nor2_2 ;
+    - _208_ sky130_fd_sc_hd__a31o_2 ;
+    - _209_ sky130_fd_sc_hd__a21oi_2 ;
+    - _210_ sky130_fd_sc_hd__a31oi_2 ;
+    - _211_ sky130_fd_sc_hd__and4_2 ;
+    - _212_ sky130_fd_sc_hd__a31o_2 ;
+    - _213_ sky130_fd_sc_hd__nor2_2 ;
+    - _214_ sky130_fd_sc_hd__a31oi_2 ;
+    - _215_ sky130_fd_sc_hd__nand4_2 ;
+    - _216_ sky130_fd_sc_hd__nand2_2 ;
+    - _217_ sky130_fd_sc_hd__nor2_2 ;
+    - _218_ sky130_fd_sc_hd__nand4_2 ;
+    - _219_ sky130_fd_sc_hd__nand2_2 ;
+    - _220_ sky130_fd_sc_hd__a21oi_2 ;
+    - _221_ sky130_fd_sc_hd__nor3_2 ;
+    - _222_ sky130_fd_sc_hd__a31o_2 ;
+    - _223_ sky130_fd_sc_hd__a21oi_2 ;
+    - _224_ sky130_fd_sc_hd__a31oi_2 ;
+    - _225_ sky130_fd_sc_hd__nand3_2 ;
+    - _226_ sky130_fd_sc_hd__o21bai_2 ;
+    - _227_ sky130_fd_sc_hd__nand2_2 ;
+    - _228_ sky130_fd_sc_hd__nor2_2 ;
+    - _229_ sky130_fd_sc_hd__nand4_2 ;
+    - _230_ sky130_fd_sc_hd__nand2_2 ;
+    - _231_ sky130_fd_sc_hd__a21oi_2 ;
+    - _232_ sky130_fd_sc_hd__nand4_2 ;
+    - _233_ sky130_fd_sc_hd__nand2_2 ;
+    - _234_ sky130_fd_sc_hd__a21oi_2 ;
+    - _235_ sky130_fd_sc_hd__nor4_2 ;
+    - _236_ sky130_fd_sc_hd__a21o_2 ;
+    - _237_ sky130_fd_sc_hd__a21oi_2 ;
+    - _238_ sky130_fd_sc_hd__a21oi_2 ;
+    - _239_ sky130_fd_sc_hd__and3_2 ;
+    - _240_ sky130_fd_sc_hd__nor3_2 ;
+    - _241_ sky130_fd_sc_hd__a31oi_2 ;
+    - _242_ sky130_fd_sc_hd__nor2_2 ;
+    - _243_ sky130_fd_sc_hd__nand3_2 ;
+    - _244_ sky130_fd_sc_hd__o21bai_2 ;
+    - _245_ sky130_fd_sc_hd__nand2_2 ;
+    - _246_ sky130_fd_sc_hd__nor2_2 ;
+    - _247_ sky130_fd_sc_hd__a31oi_2 ;
+    - _248_ sky130_fd_sc_hd__nand4_2 ;
+    - _249_ sky130_fd_sc_hd__nand2_2 ;
+    - _250_ sky130_fd_sc_hd__nor2_2 ;
+    - _251_ sky130_fd_sc_hd__nand3_2 ;
+    - _252_ sky130_fd_sc_hd__nand3_2 ;
+    - _253_ sky130_fd_sc_hd__a31o_2 ;
+    - _254_ sky130_fd_sc_hd__a21oi_2 ;
+    - _255_ sky130_fd_sc_hd__a31o_2 ;
+    - _256_ sky130_fd_sc_hd__nand4_2 ;
+    - _257_ sky130_fd_sc_hd__and3_2 ;
+    - _258_ sky130_fd_sc_hd__a41oi_2 ;
+    - _259_ sky130_fd_sc_hd__nand4_2 ;
+    - _260_ sky130_fd_sc_hd__nand4_2 ;
+    - _261_ sky130_fd_sc_hd__nor3b_2 ;
+    - _262_ sky130_fd_sc_hd__nand2_2 ;
+    - _263_ sky130_fd_sc_hd__and3_2 ;
+    - _264_ sky130_fd_sc_hd__nand4_2 ;
+    - _265_ sky130_fd_sc_hd__o211a_2 ;
+    - _266_ sky130_fd_sc_hd__nand4_2 ;
+    - _267_ sky130_fd_sc_hd__nand4_2 ;
+    - _268_ sky130_fd_sc_hd__o21ai_2 ;
+    - _269_ sky130_fd_sc_hd__a21oi_2 ;
+    - _270_ sky130_fd_sc_hd__nand2_2 ;
+    - _271_ sky130_fd_sc_hd__o211a_2 ;
+    - _272_ sky130_fd_sc_hd__a41oi_2 ;
+    - _273_ sky130_fd_sc_hd__o21ai_2 ;
+    - _274_ sky130_fd_sc_hd__nor2_2 ;
+    - _275_ sky130_fd_sc_hd__o21bai_2 ;
+    - _276_ sky130_fd_sc_hd__and4_2 ;
+    - _277_ sky130_fd_sc_hd__nand4_2 ;
+    - _278_ sky130_fd_sc_hd__and3_2 ;
+    - _279_ sky130_fd_sc_hd__o2111ai_2 ;
+    - _280_ sky130_fd_sc_hd__nand2_2 ;
+    - _281_ sky130_fd_sc_hd__o31a_2 ;
+    - _282_ sky130_fd_sc_hd__a21oi_2 ;
+    - _283_ sky130_fd_sc_hd__o21bai_2 ;
+    - _284_ sky130_fd_sc_hd__nand4_2 ;
+    - _285_ sky130_fd_sc_hd__and3_2 ;
+    - _286_ sky130_fd_sc_hd__o2111ai_2 ;
+    - _287_ sky130_fd_sc_hd__o21ai_2 ;
+    - _288_ sky130_fd_sc_hd__a21oi_2 ;
+    - _289_ sky130_fd_sc_hd__o21ba_2 ;
+    - _290_ sky130_fd_sc_hd__nand4_2 ;
+    - _291_ sky130_fd_sc_hd__o21ai_2 ;
+    - _292_ sky130_fd_sc_hd__nor2_2 ;
+    - _293_ sky130_fd_sc_hd__a31o_2 ;
+    - _294_ sky130_fd_sc_hd__o31ai_2 ;
+    - _295_ sky130_fd_sc_hd__nor4b_2 ;
+    - _296_ sky130_fd_sc_hd__nand4_2 ;
+    - _297_ sky130_fd_sc_hd__nand3_2 ;
+    - _298_ sky130_fd_sc_hd__a21oi_2 ;
+    - _299_ sky130_fd_sc_hd__o21bai_2 ;
+    - _300_ sky130_fd_sc_hd__nand4_2 ;
+    - _301_ sky130_fd_sc_hd__and3_2 ;
+    - _302_ sky130_fd_sc_hd__nand4_2 ;
+    - _303_ sky130_fd_sc_hd__nand2_2 ;
+    - _304_ sky130_fd_sc_hd__a21oi_2 ;
+    - _305_ sky130_fd_sc_hd__nor3_2 ;
+    - _306_ sky130_fd_sc_hd__o31ai_2 ;
+    - _307_ sky130_fd_sc_hd__a21oi_2 ;
+    - _308_ sky130_fd_sc_hd__o21a_2 ;
+    - _309_ sky130_fd_sc_hd__inv_2 ;
+    - _310_ sky130_fd_sc_hd__inv_2 ;
+    - _311_ sky130_fd_sc_hd__inv_2 ;
+    - _312_ sky130_fd_sc_hd__inv_2 ;
+    - _313_ sky130_fd_sc_hd__inv_2 ;
+    - _314_ sky130_fd_sc_hd__inv_2 ;
+    - _315_ sky130_fd_sc_hd__inv_2 ;
+    - _316_ sky130_fd_sc_hd__inv_2 ;
+    - _317_ sky130_fd_sc_hd__inv_2 ;
+    - _318_ sky130_fd_sc_hd__inv_2 ;
+    - _319_ sky130_fd_sc_hd__inv_2 ;
+    - _320_ sky130_fd_sc_hd__inv_2 ;
+    - _321_ sky130_fd_sc_hd__inv_2 ;
+    - _322_ sky130_fd_sc_hd__inv_2 ;
+    - _323_ sky130_fd_sc_hd__inv_2 ;
+    - _324_ sky130_fd_sc_hd__inv_2 ;
+    - _325_ sky130_fd_sc_hd__inv_2 ;
+    - _326_ sky130_fd_sc_hd__and2_2 ;
+    - _327_ sky130_fd_sc_hd__and3_2 ;
+    - _328_ sky130_fd_sc_hd__nand4_2 ;
+    - _329_ sky130_fd_sc_hd__and2_2 ;
+    - _330_ sky130_fd_sc_hd__nand4_2 ;
+    - _331_ sky130_fd_sc_hd__nor2_2 ;
+    - _332_ sky130_fd_sc_hd__and2_2 ;
+    - _333_ sky130_fd_sc_hd__and3_2 ;
+    - _334_ sky130_fd_sc_hd__nand4_2 ;
+    - _335_ sky130_fd_sc_hd__and2_2 ;
+    - _336_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _337_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _338_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _339_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _340_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _341_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _342_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _343_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _344_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _345_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _346_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _347_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _348_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _349_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _350_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _351_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _352_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _353_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _354_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _355_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _356_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _357_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _358_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _359_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _360_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _361_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _362_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _363_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _364_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _365_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _366_ sky130_fd_sc_hd__dfxtp_2 ;
+    - _367_ sky130_fd_sc_hd__dfxtp_2 ;
+END COMPONENTS
+PINS 35 ;
+    - clk + NET clk + DIRECTION INPUT + USE SIGNAL ;
+    - count[0] + NET count[0] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[10] + NET count[10] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[11] + NET count[11] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[12] + NET count[12] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[13] + NET count[13] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[14] + NET count[14] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[15] + NET count[15] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[16] + NET count[16] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[17] + NET count[17] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[18] + NET count[18] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[19] + NET count[19] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[1] + NET count[1] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[20] + NET count[20] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[21] + NET count[21] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[22] + NET count[22] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[23] + NET count[23] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[24] + NET count[24] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[25] + NET count[25] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[26] + NET count[26] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[27] + NET count[27] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[28] + NET count[28] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[29] + NET count[29] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[2] + NET count[2] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[30] + NET count[30] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[31] + NET count[31] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[3] + NET count[3] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[4] + NET count[4] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[5] + NET count[5] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[6] + NET count[6] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[7] + NET count[7] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[8] + NET count[8] + DIRECTION OUTPUT + USE SIGNAL ;
+    - count[9] + NET count[9] + DIRECTION OUTPUT + USE SIGNAL ;
+    - en + NET en + DIRECTION INPUT + USE SIGNAL ;
+    - rst_n + NET rst_n + DIRECTION INPUT + USE SIGNAL ;
+END PINS
+SPECIALNETS 2 ;
+    - VGND ( _367_ VNB ) ( _366_ VNB ) ( _365_ VNB ) ( _364_ VNB ) ( _363_ VNB ) ( _362_ VNB ) ( _361_ VNB )
+      ( _360_ VNB ) ( _359_ VNB ) ( _358_ VNB ) ( _357_ VNB ) ( _356_ VNB ) ( _355_ VNB ) ( _354_ VNB ) ( _353_ VNB )
+      ( _352_ VNB ) ( _351_ VNB ) ( _350_ VNB ) ( _349_ VNB ) ( _348_ VNB ) ( _347_ VNB ) ( _346_ VNB ) ( _345_ VNB )
+      ( _344_ VNB ) ( _343_ VNB ) ( _342_ VNB ) ( _341_ VNB ) ( _340_ VNB ) ( _339_ VNB ) ( _338_ VNB ) ( _337_ VNB )
+      ( _336_ VNB ) ( _335_ VNB ) ( _334_ VNB ) ( _333_ VNB ) ( _332_ VNB ) ( _331_ VNB ) ( _330_ VNB ) ( _329_ VNB )
+      ( _328_ VNB ) ( _327_ VNB ) ( _326_ VNB ) ( _325_ VNB ) ( _324_ VNB ) ( _323_ VNB ) ( _322_ VNB ) ( _321_ VNB )
+      ( _320_ VNB ) ( _319_ VNB ) ( _318_ VNB ) ( _317_ VNB ) ( _316_ VNB ) ( _315_ VNB ) ( _314_ VNB ) ( _313_ VNB )
+      ( _312_ VNB ) ( _311_ VNB ) ( _310_ VNB ) ( _309_ VNB ) ( _308_ VNB ) ( _307_ VNB ) ( _306_ VNB ) ( _305_ VNB )
+      ( _304_ VNB ) ( _303_ VNB ) ( _302_ VNB ) ( _301_ VNB ) ( _300_ VNB ) ( _299_ VNB ) ( _298_ VNB ) ( _297_ VNB )
+      ( _296_ VNB ) ( _295_ VNB ) ( _294_ VNB ) ( _293_ VNB ) ( _292_ VNB ) ( _291_ VNB ) ( _290_ VNB ) ( _289_ VNB )
+      ( _288_ VNB ) ( _287_ VNB ) ( _286_ VNB ) ( _285_ VNB ) ( _284_ VNB ) ( _283_ VNB ) ( _282_ VNB ) ( _281_ VNB )
+      ( _280_ VNB ) ( _279_ VNB ) ( _278_ VNB ) ( _277_ VNB ) ( _276_ VNB ) ( _275_ VNB ) ( _274_ VNB ) ( _273_ VNB )
+      ( _272_ VNB ) ( _271_ VNB ) ( _270_ VNB ) ( _269_ VNB ) ( _268_ VNB ) ( _267_ VNB ) ( _266_ VNB ) ( _265_ VNB )
+      ( _264_ VNB ) ( _263_ VNB ) ( _262_ VNB ) ( _261_ VNB ) ( _260_ VNB ) ( _259_ VNB ) ( _258_ VNB ) ( _257_ VNB )
+      ( _256_ VNB ) ( _255_ VNB ) ( _254_ VNB ) ( _253_ VNB ) ( _252_ VNB ) ( _251_ VNB ) ( _250_ VNB ) ( _249_ VNB )
+      ( _248_ VNB ) ( _247_ VNB ) ( _246_ VNB ) ( _245_ VNB ) ( _244_ VNB ) ( _243_ VNB ) ( _242_ VNB ) ( _241_ VNB )
+      ( _240_ VNB ) ( _239_ VNB ) ( _238_ VNB ) ( _237_ VNB ) ( _236_ VNB ) ( _235_ VNB ) ( _234_ VNB ) ( _233_ VNB )
+      ( _232_ VNB ) ( _231_ VNB ) ( _230_ VNB ) ( _229_ VNB ) ( _228_ VNB ) ( _227_ VNB ) ( _226_ VNB ) ( _225_ VNB )
+      ( _224_ VNB ) ( _223_ VNB ) ( _222_ VNB ) ( _221_ VNB ) ( _220_ VNB ) ( _219_ VNB ) ( _218_ VNB ) ( _217_ VNB )
+      ( _216_ VNB ) ( _215_ VNB ) ( _214_ VNB ) ( _213_ VNB ) ( _212_ VNB ) ( _211_ VNB ) ( _210_ VNB ) ( _209_ VNB )
+      ( _208_ VNB ) ( _207_ VNB ) ( _206_ VNB ) ( _205_ VNB ) ( _204_ VNB ) ( _203_ VNB ) ( _202_ VNB ) ( _201_ VNB )
+      ( _200_ VNB ) ( _199_ VNB ) ( _198_ VNB ) ( _197_ VNB ) ( _196_ VNB ) ( _195_ VNB ) ( _194_ VNB ) ( _193_ VNB )
+      ( _192_ VNB ) ( _191_ VNB ) ( _190_ VNB ) ( _189_ VNB ) ( _188_ VNB ) ( _187_ VNB ) ( _186_ VNB ) ( _185_ VNB )
+      ( _184_ VNB ) ( _183_ VNB ) ( _182_ VNB ) ( _181_ VNB ) ( _180_ VNB ) ( _179_ VNB ) ( _178_ VNB ) ( _177_ VNB )
+      ( _176_ VNB ) ( _175_ VNB ) ( _174_ VNB ) ( _173_ VNB ) ( _172_ VNB ) ( _171_ VNB ) ( _170_ VNB ) ( _169_ VNB )
+      ( _168_ VNB ) ( _367_ VGND ) ( _366_ VGND ) ( _365_ VGND ) ( _364_ VGND ) ( _363_ VGND ) ( _362_ VGND ) ( _361_ VGND )
+      ( _360_ VGND ) ( _359_ VGND ) ( _358_ VGND ) ( _357_ VGND ) ( _356_ VGND ) ( _355_ VGND ) ( _354_ VGND ) ( _353_ VGND )
+      ( _352_ VGND ) ( _351_ VGND ) ( _350_ VGND ) ( _349_ VGND ) ( _348_ VGND ) ( _347_ VGND ) ( _346_ VGND ) ( _345_ VGND )
+      ( _344_ VGND ) ( _343_ VGND ) ( _342_ VGND ) ( _341_ VGND ) ( _340_ VGND ) ( _339_ VGND ) ( _338_ VGND ) ( _337_ VGND )
+      ( _336_ VGND ) ( _335_ VGND ) ( _334_ VGND ) ( _333_ VGND ) ( _332_ VGND ) ( _331_ VGND ) ( _330_ VGND ) ( _329_ VGND )
+      ( _328_ VGND ) ( _327_ VGND ) ( _326_ VGND ) ( _325_ VGND ) ( _324_ VGND ) ( _323_ VGND ) ( _322_ VGND ) ( _321_ VGND )
+      ( _320_ VGND ) ( _319_ VGND ) ( _318_ VGND ) ( _317_ VGND ) ( _316_ VGND ) ( _315_ VGND ) ( _314_ VGND ) ( _313_ VGND )
+      ( _312_ VGND ) ( _311_ VGND ) ( _310_ VGND ) ( _309_ VGND ) ( _308_ VGND ) ( _307_ VGND ) ( _306_ VGND ) ( _305_ VGND )
+      ( _304_ VGND ) ( _303_ VGND ) ( _302_ VGND ) ( _301_ VGND ) ( _300_ VGND ) ( _299_ VGND ) ( _298_ VGND ) ( _297_ VGND )
+      ( _296_ VGND ) ( _295_ VGND ) ( _294_ VGND ) ( _293_ VGND ) ( _292_ VGND ) ( _291_ VGND ) ( _290_ VGND ) ( _289_ VGND )
+      ( _288_ VGND ) ( _287_ VGND ) ( _286_ VGND ) ( _285_ VGND ) ( _284_ VGND ) ( _283_ VGND ) ( _282_ VGND ) ( _281_ VGND )
+      ( _280_ VGND ) ( _279_ VGND ) ( _278_ VGND ) ( _277_ VGND ) ( _276_ VGND ) ( _275_ VGND ) ( _274_ VGND ) ( _273_ VGND )
+      ( _272_ VGND ) ( _271_ VGND ) ( _270_ VGND ) ( _269_ VGND ) ( _268_ VGND ) ( _267_ VGND ) ( _266_ VGND ) ( _265_ VGND )
+      ( _264_ VGND ) ( _263_ VGND ) ( _262_ VGND ) ( _261_ VGND ) ( _260_ VGND ) ( _259_ VGND ) ( _258_ VGND ) ( _257_ VGND )
+      ( _256_ VGND ) ( _255_ VGND ) ( _254_ VGND ) ( _253_ VGND ) ( _252_ VGND ) ( _251_ VGND ) ( _250_ VGND ) ( _249_ VGND )
+      ( _248_ VGND ) ( _247_ VGND ) ( _246_ VGND ) ( _245_ VGND ) ( _244_ VGND ) ( _243_ VGND ) ( _242_ VGND ) ( _241_ VGND )
+      ( _240_ VGND ) ( _239_ VGND ) ( _238_ VGND ) ( _237_ VGND ) ( _236_ VGND ) ( _235_ VGND ) ( _234_ VGND ) ( _233_ VGND )
+      ( _232_ VGND ) ( _231_ VGND ) ( _230_ VGND ) ( _229_ VGND ) ( _228_ VGND ) ( _227_ VGND ) ( _226_ VGND ) ( _225_ VGND )
+      ( _224_ VGND ) ( _223_ VGND ) ( _222_ VGND ) ( _221_ VGND ) ( _220_ VGND ) ( _219_ VGND ) ( _218_ VGND ) ( _217_ VGND )
+      ( _216_ VGND ) ( _215_ VGND ) ( _214_ VGND ) ( _213_ VGND ) ( _212_ VGND ) ( _211_ VGND ) ( _210_ VGND ) ( _209_ VGND )
+      ( _208_ VGND ) ( _207_ VGND ) ( _206_ VGND ) ( _205_ VGND ) ( _204_ VGND ) ( _203_ VGND ) ( _202_ VGND ) ( _201_ VGND )
+      ( _200_ VGND ) ( _199_ VGND ) ( _198_ VGND ) ( _197_ VGND ) ( _196_ VGND ) ( _195_ VGND ) ( _194_ VGND ) ( _193_ VGND )
+      ( _192_ VGND ) ( _191_ VGND ) ( _190_ VGND ) ( _189_ VGND ) ( _188_ VGND ) ( _187_ VGND ) ( _186_ VGND ) ( _185_ VGND )
+      ( _184_ VGND ) ( _183_ VGND ) ( _182_ VGND ) ( _181_ VGND ) ( _180_ VGND ) ( _179_ VGND ) ( _178_ VGND ) ( _177_ VGND )
+      ( _176_ VGND ) ( _175_ VGND ) ( _174_ VGND ) ( _173_ VGND ) ( _172_ VGND ) ( _171_ VGND ) ( _170_ VGND ) ( _169_ VGND )
+      ( _168_ VGND ) + USE GROUND ;
+    - VPWR ( _367_ VPB ) ( _366_ VPB ) ( _365_ VPB ) ( _364_ VPB ) ( _363_ VPB ) ( _362_ VPB ) ( _361_ VPB )
+      ( _360_ VPB ) ( _359_ VPB ) ( _358_ VPB ) ( _357_ VPB ) ( _356_ VPB ) ( _355_ VPB ) ( _354_ VPB ) ( _353_ VPB )
+      ( _352_ VPB ) ( _351_ VPB ) ( _350_ VPB ) ( _349_ VPB ) ( _348_ VPB ) ( _347_ VPB ) ( _346_ VPB ) ( _345_ VPB )
+      ( _344_ VPB ) ( _343_ VPB ) ( _342_ VPB ) ( _341_ VPB ) ( _340_ VPB ) ( _339_ VPB ) ( _338_ VPB ) ( _337_ VPB )
+      ( _336_ VPB ) ( _335_ VPB ) ( _334_ VPB ) ( _333_ VPB ) ( _332_ VPB ) ( _331_ VPB ) ( _330_ VPB ) ( _329_ VPB )
+      ( _328_ VPB ) ( _327_ VPB ) ( _326_ VPB ) ( _325_ VPB ) ( _324_ VPB ) ( _323_ VPB ) ( _322_ VPB ) ( _321_ VPB )
+      ( _320_ VPB ) ( _319_ VPB ) ( _318_ VPB ) ( _317_ VPB ) ( _316_ VPB ) ( _315_ VPB ) ( _314_ VPB ) ( _313_ VPB )
+      ( _312_ VPB ) ( _311_ VPB ) ( _310_ VPB ) ( _309_ VPB ) ( _308_ VPB ) ( _307_ VPB ) ( _306_ VPB ) ( _305_ VPB )
+      ( _304_ VPB ) ( _303_ VPB ) ( _302_ VPB ) ( _301_ VPB ) ( _300_ VPB ) ( _299_ VPB ) ( _298_ VPB ) ( _297_ VPB )
+      ( _296_ VPB ) ( _295_ VPB ) ( _294_ VPB ) ( _293_ VPB ) ( _292_ VPB ) ( _291_ VPB ) ( _290_ VPB ) ( _289_ VPB )
+      ( _288_ VPB ) ( _287_ VPB ) ( _286_ VPB ) ( _285_ VPB ) ( _284_ VPB ) ( _283_ VPB ) ( _282_ VPB ) ( _281_ VPB )
+      ( _280_ VPB ) ( _279_ VPB ) ( _278_ VPB ) ( _277_ VPB ) ( _276_ VPB ) ( _275_ VPB ) ( _274_ VPB ) ( _273_ VPB )
+      ( _272_ VPB ) ( _271_ VPB ) ( _270_ VPB ) ( _269_ VPB ) ( _268_ VPB ) ( _267_ VPB ) ( _266_ VPB ) ( _265_ VPB )
+      ( _264_ VPB ) ( _263_ VPB ) ( _262_ VPB ) ( _261_ VPB ) ( _260_ VPB ) ( _259_ VPB ) ( _258_ VPB ) ( _257_ VPB )
+      ( _256_ VPB ) ( _255_ VPB ) ( _254_ VPB ) ( _253_ VPB ) ( _252_ VPB ) ( _251_ VPB ) ( _250_ VPB ) ( _249_ VPB )
+      ( _248_ VPB ) ( _247_ VPB ) ( _246_ VPB ) ( _245_ VPB ) ( _244_ VPB ) ( _243_ VPB ) ( _242_ VPB ) ( _241_ VPB )
+      ( _240_ VPB ) ( _239_ VPB ) ( _238_ VPB ) ( _237_ VPB ) ( _236_ VPB ) ( _235_ VPB ) ( _234_ VPB ) ( _233_ VPB )
+      ( _232_ VPB ) ( _231_ VPB ) ( _230_ VPB ) ( _229_ VPB ) ( _228_ VPB ) ( _227_ VPB ) ( _226_ VPB ) ( _225_ VPB )
+      ( _224_ VPB ) ( _223_ VPB ) ( _222_ VPB ) ( _221_ VPB ) ( _220_ VPB ) ( _219_ VPB ) ( _218_ VPB ) ( _217_ VPB )
+      ( _216_ VPB ) ( _215_ VPB ) ( _214_ VPB ) ( _213_ VPB ) ( _212_ VPB ) ( _211_ VPB ) ( _210_ VPB ) ( _209_ VPB )
+      ( _208_ VPB ) ( _207_ VPB ) ( _206_ VPB ) ( _205_ VPB ) ( _204_ VPB ) ( _203_ VPB ) ( _202_ VPB ) ( _201_ VPB )
+      ( _200_ VPB ) ( _199_ VPB ) ( _198_ VPB ) ( _197_ VPB ) ( _196_ VPB ) ( _195_ VPB ) ( _194_ VPB ) ( _193_ VPB )
+      ( _192_ VPB ) ( _191_ VPB ) ( _190_ VPB ) ( _189_ VPB ) ( _188_ VPB ) ( _187_ VPB ) ( _186_ VPB ) ( _185_ VPB )
+      ( _184_ VPB ) ( _183_ VPB ) ( _182_ VPB ) ( _181_ VPB ) ( _180_ VPB ) ( _179_ VPB ) ( _178_ VPB ) ( _177_ VPB )
+      ( _176_ VPB ) ( _175_ VPB ) ( _174_ VPB ) ( _173_ VPB ) ( _172_ VPB ) ( _171_ VPB ) ( _170_ VPB ) ( _169_ VPB )
+      ( _168_ VPB ) ( _367_ VPWR ) ( _366_ VPWR ) ( _365_ VPWR ) ( _364_ VPWR ) ( _363_ VPWR ) ( _362_ VPWR ) ( _361_ VPWR )
+      ( _360_ VPWR ) ( _359_ VPWR ) ( _358_ VPWR ) ( _357_ VPWR ) ( _356_ VPWR ) ( _355_ VPWR ) ( _354_ VPWR ) ( _353_ VPWR )
+      ( _352_ VPWR ) ( _351_ VPWR ) ( _350_ VPWR ) ( _349_ VPWR ) ( _348_ VPWR ) ( _347_ VPWR ) ( _346_ VPWR ) ( _345_ VPWR )
+      ( _344_ VPWR ) ( _343_ VPWR ) ( _342_ VPWR ) ( _341_ VPWR ) ( _340_ VPWR ) ( _339_ VPWR ) ( _338_ VPWR ) ( _337_ VPWR )
+      ( _336_ VPWR ) ( _335_ VPWR ) ( _334_ VPWR ) ( _333_ VPWR ) ( _332_ VPWR ) ( _331_ VPWR ) ( _330_ VPWR ) ( _329_ VPWR )
+      ( _328_ VPWR ) ( _327_ VPWR ) ( _326_ VPWR ) ( _325_ VPWR ) ( _324_ VPWR ) ( _323_ VPWR ) ( _322_ VPWR ) ( _321_ VPWR )
+      ( _320_ VPWR ) ( _319_ VPWR ) ( _318_ VPWR ) ( _317_ VPWR ) ( _316_ VPWR ) ( _315_ VPWR ) ( _314_ VPWR ) ( _313_ VPWR )
+      ( _312_ VPWR ) ( _311_ VPWR ) ( _310_ VPWR ) ( _309_ VPWR ) ( _308_ VPWR ) ( _307_ VPWR ) ( _306_ VPWR ) ( _305_ VPWR )
+      ( _304_ VPWR ) ( _303_ VPWR ) ( _302_ VPWR ) ( _301_ VPWR ) ( _300_ VPWR ) ( _299_ VPWR ) ( _298_ VPWR ) ( _297_ VPWR )
+      ( _296_ VPWR ) ( _295_ VPWR ) ( _294_ VPWR ) ( _293_ VPWR ) ( _292_ VPWR ) ( _291_ VPWR ) ( _290_ VPWR ) ( _289_ VPWR )
+      ( _288_ VPWR ) ( _287_ VPWR ) ( _286_ VPWR ) ( _285_ VPWR ) ( _284_ VPWR ) ( _283_ VPWR ) ( _282_ VPWR ) ( _281_ VPWR )
+      ( _280_ VPWR ) ( _279_ VPWR ) ( _278_ VPWR ) ( _277_ VPWR ) ( _276_ VPWR ) ( _275_ VPWR ) ( _274_ VPWR ) ( _273_ VPWR )
+      ( _272_ VPWR ) ( _271_ VPWR ) ( _270_ VPWR ) ( _269_ VPWR ) ( _268_ VPWR ) ( _267_ VPWR ) ( _266_ VPWR ) ( _265_ VPWR )
+      ( _264_ VPWR ) ( _263_ VPWR ) ( _262_ VPWR ) ( _261_ VPWR ) ( _260_ VPWR ) ( _259_ VPWR ) ( _258_ VPWR ) ( _257_ VPWR )
+      ( _256_ VPWR ) ( _255_ VPWR ) ( _254_ VPWR ) ( _253_ VPWR ) ( _252_ VPWR ) ( _251_ VPWR ) ( _250_ VPWR ) ( _249_ VPWR )
+      ( _248_ VPWR ) ( _247_ VPWR ) ( _246_ VPWR ) ( _245_ VPWR ) ( _244_ VPWR ) ( _243_ VPWR ) ( _242_ VPWR ) ( _241_ VPWR )
+      ( _240_ VPWR ) ( _239_ VPWR ) ( _238_ VPWR ) ( _237_ VPWR ) ( _236_ VPWR ) ( _235_ VPWR ) ( _234_ VPWR ) ( _233_ VPWR )
+      ( _232_ VPWR ) ( _231_ VPWR ) ( _230_ VPWR ) ( _229_ VPWR ) ( _228_ VPWR ) ( _227_ VPWR ) ( _226_ VPWR ) ( _225_ VPWR )
+      ( _224_ VPWR ) ( _223_ VPWR ) ( _222_ VPWR ) ( _221_ VPWR ) ( _220_ VPWR ) ( _219_ VPWR ) ( _218_ VPWR ) ( _217_ VPWR )
+      ( _216_ VPWR ) ( _215_ VPWR ) ( _214_ VPWR ) ( _213_ VPWR ) ( _212_ VPWR ) ( _211_ VPWR ) ( _210_ VPWR ) ( _209_ VPWR )
+      ( _208_ VPWR ) ( _207_ VPWR ) ( _206_ VPWR ) ( _205_ VPWR ) ( _204_ VPWR ) ( _203_ VPWR ) ( _202_ VPWR ) ( _201_ VPWR )
+      ( _200_ VPWR ) ( _199_ VPWR ) ( _198_ VPWR ) ( _197_ VPWR ) ( _196_ VPWR ) ( _195_ VPWR ) ( _194_ VPWR ) ( _193_ VPWR )
+      ( _192_ VPWR ) ( _191_ VPWR ) ( _190_ VPWR ) ( _189_ VPWR ) ( _188_ VPWR ) ( _187_ VPWR ) ( _186_ VPWR ) ( _185_ VPWR )
+      ( _184_ VPWR ) ( _183_ VPWR ) ( _182_ VPWR ) ( _181_ VPWR ) ( _180_ VPWR ) ( _179_ VPWR ) ( _178_ VPWR ) ( _177_ VPWR )
+      ( _176_ VPWR ) ( _175_ VPWR ) ( _174_ VPWR ) ( _173_ VPWR ) ( _172_ VPWR ) ( _171_ VPWR ) ( _170_ VPWR ) ( _169_ VPWR )
+      ( _168_ VPWR ) + USE POWER ;
+END SPECIALNETS
+NETS 203 ;
+    - _000_ ( _336_ D ) ( _200_ Y ) + USE SIGNAL ;
+    - _001_ ( _337_ D ) ( _203_ Y ) + USE SIGNAL ;
+    - _002_ ( _338_ D ) ( _207_ Y ) + USE SIGNAL ;
+    - _003_ ( _339_ D ) ( _209_ Y ) + USE SIGNAL ;
+    - _004_ ( _340_ D ) ( _213_ Y ) + USE SIGNAL ;
+    - _005_ ( _341_ D ) ( _217_ Y ) + USE SIGNAL ;
+    - _006_ ( _342_ D ) ( _220_ Y ) + USE SIGNAL ;
+    - _007_ ( _343_ D ) ( _223_ Y ) + USE SIGNAL ;
+    - _008_ ( _344_ D ) ( _228_ Y ) + USE SIGNAL ;
+    - _009_ ( _345_ D ) ( _231_ Y ) + USE SIGNAL ;
+    - _010_ ( _346_ D ) ( _234_ Y ) + USE SIGNAL ;
+    - _011_ ( _347_ D ) ( _237_ Y ) + USE SIGNAL ;
+    - _012_ ( _348_ D ) ( _240_ Y ) + USE SIGNAL ;
+    - _013_ ( _349_ D ) ( _246_ Y ) + USE SIGNAL ;
+    - _014_ ( _350_ D ) ( _250_ Y ) + USE SIGNAL ;
+    - _015_ ( _351_ D ) ( _254_ Y ) + USE SIGNAL ;
+    - _016_ ( _352_ D ) ( _257_ X ) + USE SIGNAL ;
+    - _017_ ( _353_ D ) ( _261_ Y ) + USE SIGNAL ;
+    - _018_ ( _354_ D ) ( _265_ X ) + USE SIGNAL ;
+    - _019_ ( _355_ D ) ( _269_ Y ) + USE SIGNAL ;
+    - _020_ ( _356_ D ) ( _271_ X ) + USE SIGNAL ;
+    - _021_ ( _357_ D ) ( _274_ Y ) + USE SIGNAL ;
+    - _022_ ( _358_ D ) ( _278_ X ) + USE SIGNAL ;
+    - _023_ ( _359_ D ) ( _282_ Y ) + USE SIGNAL ;
+    - _024_ ( _360_ D ) ( _285_ X ) + USE SIGNAL ;
+    - _025_ ( _361_ D ) ( _288_ Y ) + USE SIGNAL ;
+    - _026_ ( _362_ D ) ( _292_ Y ) + USE SIGNAL ;
+    - _027_ ( _363_ D ) ( _298_ Y ) + USE SIGNAL ;
+    - _028_ ( _364_ D ) ( _301_ X ) + USE SIGNAL ;
+    - _029_ ( _365_ D ) ( _304_ Y ) + USE SIGNAL ;
+    - _030_ ( _366_ D ) ( _307_ Y ) + USE SIGNAL ;
+    - _031_ ( _367_ D ) ( _308_ X ) + USE SIGNAL ;
+    - _032_ ( _296_ A ) ( _295_ D_N ) ( _286_ A1 ) ( _281_ A2 ) ( _279_ A1 ) ( _179_ A ) ( _178_ A )
+      ( _174_ Y ) + USE SIGNAL ;
+    - _033_ ( _296_ B ) ( _290_ B ) ( _175_ X ) + USE SIGNAL ;
+    - _034_ ( _295_ C ) ( _291_ A1 ) ( _281_ A3 ) ( _176_ Y ) + USE SIGNAL ;
+    - _035_ ( _293_ B1 ) ( _286_ A2 ) ( _279_ A2 ) ( _179_ B ) ( _178_ B ) ( _177_ Y ) + USE SIGNAL ;
+    - _036_ ( _196_ B ) ( _193_ C ) ( _192_ A ) ( _188_ A ) ( _178_ Y ) + USE SIGNAL ;
+    - _037_ ( _244_ A1 ) ( _226_ A1 ) ( _179_ X ) + USE SIGNAL ;
+    - _038_ ( _260_ D ) ( _259_ D ) ( _184_ D ) ( _180_ X ) + USE SIGNAL ;
+    - _039_ ( _277_ D ) ( _267_ D ) ( _266_ D ) ( _196_ C ) ( _188_ B ) ( _187_ A ) ( _185_ A )
+      ( _181_ X ) + USE SIGNAL ;
+    - _040_ ( _268_ A1 ) ( _195_ B ) ( _194_ B ) ( _191_ A ) ( _182_ Y ) + USE SIGNAL ;
+    - _041_ ( _188_ C ) ( _187_ B ) ( _185_ B ) ( _183_ X ) + USE SIGNAL ;
+    - _042_ ( _272_ A3 ) ( _184_ X ) + USE SIGNAL ;
+    - _043_ ( _275_ A1 ) ( _273_ A1 ) ( _185_ Y ) + USE SIGNAL ;
+    - _044_ ( _188_ D ) ( _187_ C ) ( _186_ X ) + USE SIGNAL ;
+    - _045_ ( _294_ A1 ) ( _187_ Y ) + USE SIGNAL ;
+    - _046_ ( _266_ A ) ( _259_ A ) ( _256_ A ) ( _188_ Y ) + USE SIGNAL ;
+    - _047_ ( _198_ C ) ( _196_ D ) ( _195_ C_N ) ( _189_ X ) + USE SIGNAL ;
+    - _048_ ( _191_ B ) ( _190_ Y ) + USE SIGNAL ;
+    - _049_ ( _300_ C ) ( _297_ C ) ( _279_ B1 ) ( _193_ D ) ( _192_ B ) ( _191_ Y ) + USE SIGNAL ;
+    - _050_ ( _267_ A ) ( _260_ A ) ( _258_ A1 ) ( _255_ A1 ) ( _253_ A1 ) ( _252_ A ) ( _192_ Y ) + USE SIGNAL ;
+    - _051_ ( _248_ A ) ( _247_ A1 ) ( _241_ A1 ) ( _239_ A ) ( _238_ A1 ) ( _236_ A1 ) ( _232_ A )
+      ( _229_ A ) ( _224_ A1 ) ( _222_ A1 ) ( _218_ A ) ( _215_ A ) ( _214_ A1 ) ( _212_ A1 ) ( _210_ A1 )
+      ( _208_ A1 ) ( _205_ A ) ( _204_ A1 ) ( _202_ A1 ) ( _201_ A1 ) ( _199_ A1 ) ( _197_ A1 ) ( _193_ Y ) + USE SIGNAL ;
+    - _052_ ( _198_ D ) ( _194_ Y ) + USE SIGNAL ;
+    - _053_ ( _302_ C ) ( _290_ C ) ( _284_ C ) ( _195_ Y ) + USE SIGNAL ;
+    - _054_ ( _277_ B ) ( _272_ A2 ) ( _264_ C ) ( _196_ Y ) + USE SIGNAL ;
+    - _055_ ( _200_ A ) ( _197_ Y ) + USE SIGNAL ;
+    - _056_ ( _289_ A1 ) ( _287_ A1 ) ( _283_ A2 ) ( _244_ A2 ) ( _226_ A2 ) ( _198_ Y ) + USE SIGNAL ;
+    - _057_ ( _200_ B ) ( _199_ X ) + USE SIGNAL ;
+    - _058_ ( _203_ A ) ( _201_ Y ) + USE SIGNAL ;
+    - _059_ ( _203_ B ) ( _202_ X ) + USE SIGNAL ;
+    - _060_ ( _207_ A ) ( _204_ Y ) + USE SIGNAL ;
+    - _061_ ( _209_ A2 ) ( _206_ A ) ( _205_ Y ) + USE SIGNAL ;
+    - _062_ ( _207_ B ) ( _206_ Y ) + USE SIGNAL ;
+    - _063_ ( _209_ B1 ) ( _208_ X ) + USE SIGNAL ;
+    - _064_ ( _213_ A ) ( _210_ Y ) + USE SIGNAL ;
+    - _065_ ( _218_ B ) ( _215_ B ) ( _214_ A2 ) ( _212_ A2 ) ( _211_ X ) + USE SIGNAL ;
+    - _066_ ( _213_ B ) ( _212_ X ) + USE SIGNAL ;
+    - _067_ ( _217_ A ) ( _214_ Y ) + USE SIGNAL ;
+    - _068_ ( _220_ A2 ) ( _216_ A ) ( _215_ Y ) + USE SIGNAL ;
+    - _069_ ( _217_ B ) ( _216_ Y ) + USE SIGNAL ;
+    - _070_ ( _223_ A2 ) ( _219_ A ) ( _218_ Y ) + USE SIGNAL ;
+    - _071_ ( _220_ B1 ) ( _219_ Y ) + USE SIGNAL ;
+    - _072_ ( _279_ C1 ) ( _267_ B ) ( _266_ B ) ( _260_ B ) ( _259_ B ) ( _258_ A2 ) ( _256_ B )
+      ( _255_ A2 ) ( _253_ A2 ) ( _252_ B ) ( _221_ Y ) + USE SIGNAL ;
+    - _073_ ( _223_ B1 ) ( _222_ X ) + USE SIGNAL ;
+    - _074_ ( _228_ A ) ( _224_ Y ) + USE SIGNAL ;
+    - _075_ ( _226_ B1_N ) ( _225_ Y ) + USE SIGNAL ;
+    - _076_ ( _231_ A2 ) ( _227_ A ) ( _226_ Y ) + USE SIGNAL ;
+    - _077_ ( _228_ B ) ( _227_ Y ) + USE SIGNAL ;
+    - _078_ ( _234_ A2 ) ( _230_ A ) ( _229_ Y ) + USE SIGNAL ;
+    - _079_ ( _231_ B1 ) ( _230_ Y ) + USE SIGNAL ;
+    - _080_ ( _237_ A2 ) ( _233_ A ) ( _232_ Y ) + USE SIGNAL ;
+    - _081_ ( _234_ B1 ) ( _233_ Y ) + USE SIGNAL ;
+    - _082_ ( _248_ B ) ( _247_ A2 ) ( _241_ A2 ) ( _239_ B ) ( _238_ A2 ) ( _236_ A2 ) ( _235_ Y ) + USE SIGNAL ;
+    - _083_ ( _237_ B1 ) ( _236_ X ) + USE SIGNAL ;
+    - _084_ ( _240_ B ) ( _238_ Y ) + USE SIGNAL ;
+    - _085_ ( _240_ C ) ( _239_ X ) + USE SIGNAL ;
+    - _086_ ( _246_ A ) ( _241_ Y ) + USE SIGNAL ;
+    - _087_ ( _243_ C ) ( _242_ Y ) + USE SIGNAL ;
+    - _088_ ( _244_ B1_N ) ( _243_ Y ) + USE SIGNAL ;
+    - _089_ ( _245_ A ) ( _244_ Y ) + USE SIGNAL ;
+    - _090_ ( _246_ B ) ( _245_ Y ) + USE SIGNAL ;
+    - _091_ ( _250_ A ) ( _247_ Y ) + USE SIGNAL ;
+    - _092_ ( _254_ A2 ) ( _249_ A ) ( _248_ Y ) + USE SIGNAL ;
+    - _093_ ( _250_ B ) ( _249_ Y ) + USE SIGNAL ;
+    - _094_ ( _294_ A2 ) ( _275_ A2 ) ( _251_ Y ) + USE SIGNAL ;
+    - _095_ ( _273_ A2 ) ( _268_ A2 ) ( _252_ Y ) + USE SIGNAL ;
+    - _096_ ( _254_ B1 ) ( _253_ X ) + USE SIGNAL ;
+    - _097_ ( _257_ A ) ( _255_ X ) + USE SIGNAL ;
+    - _098_ ( _257_ B ) ( _256_ Y ) + USE SIGNAL ;
+    - _099_ ( _261_ B ) ( _258_ Y ) + USE SIGNAL ;
+    - _100_ ( _265_ A2 ) ( _261_ C_N ) ( _259_ Y ) + USE SIGNAL ;
+    - _101_ ( _262_ B ) ( _260_ Y ) + USE SIGNAL ;
+    - _102_ ( _265_ C1 ) ( _262_ Y ) + USE SIGNAL ;
+    - _103_ ( _264_ D ) ( _263_ X ) + USE SIGNAL ;
+    - _104_ ( _269_ A2 ) ( _264_ Y ) + USE SIGNAL ;
+    - _105_ ( _271_ A2 ) ( _266_ Y ) + USE SIGNAL ;
+    - _106_ ( _270_ B ) ( _267_ Y ) + USE SIGNAL ;
+    - _107_ ( _269_ B1 ) ( _268_ Y ) + USE SIGNAL ;
+    - _108_ ( _271_ C1 ) ( _270_ Y ) + USE SIGNAL ;
+    - _109_ ( _274_ B ) ( _272_ Y ) + USE SIGNAL ;
+    - _110_ ( _274_ A ) ( _273_ Y ) + USE SIGNAL ;
+    - _111_ ( _278_ C ) ( _275_ Y ) + USE SIGNAL ;
+    - _112_ ( _277_ C ) ( _276_ X ) + USE SIGNAL ;
+    - _113_ ( _282_ A2 ) ( _278_ A ) ( _277_ Y ) + USE SIGNAL ;
+    - _114_ ( _291_ A2 ) ( _280_ A ) ( _279_ Y ) + USE SIGNAL ;
+    - _115_ ( _282_ B1 ) ( _280_ Y ) + USE SIGNAL ;
+    - _116_ ( _290_ D ) ( _284_ D ) ( _281_ X ) + USE SIGNAL ;
+    - _117_ ( _285_ A ) ( _283_ Y ) + USE SIGNAL ;
+    - _118_ ( _288_ A2 ) ( _285_ B ) ( _284_ Y ) + USE SIGNAL ;
+    - _119_ ( _289_ A2 ) ( _287_ A2 ) ( _286_ Y ) + USE SIGNAL ;
+    - _120_ ( _288_ B1 ) ( _287_ Y ) + USE SIGNAL ;
+    - _121_ ( _292_ A ) ( _289_ X ) + USE SIGNAL ;
+    - _122_ ( _298_ A2 ) ( _290_ Y ) + USE SIGNAL ;
+    - _123_ ( _292_ B ) ( _291_ Y ) + USE SIGNAL ;
+    - _124_ ( _294_ A3 ) ( _293_ X ) + USE SIGNAL ;
+    - _125_ ( _298_ B1 ) ( _294_ Y ) + USE SIGNAL ;
+    - _126_ ( _302_ D ) ( _300_ D ) ( _295_ Y ) + USE SIGNAL ;
+    - _127_ ( _306_ A2 ) ( _305_ B ) ( _299_ A1 ) ( _296_ Y ) + USE SIGNAL ;
+    - _128_ ( _306_ A3 ) ( _305_ C ) ( _299_ A2 ) ( _297_ Y ) + USE SIGNAL ;
+    - _129_ ( _301_ C ) ( _299_ Y ) + USE SIGNAL ;
+    - _130_ ( _304_ A2 ) ( _301_ A ) ( _300_ Y ) + USE SIGNAL ;
+    - _131_ ( _307_ A2 ) ( _303_ A ) ( _302_ Y ) + USE SIGNAL ;
+    - _132_ ( _304_ B1 ) ( _303_ Y ) + USE SIGNAL ;
+    - _133_ ( _308_ A2 ) ( _305_ Y ) + USE SIGNAL ;
+    - _134_ ( _307_ B1 ) ( _306_ Y ) + USE SIGNAL ;
+    - _135_ ( _309_ Y ) ( _307_ A1 ) + USE SIGNAL ;
+    - _136_ ( _310_ Y ) ( _304_ A1 ) + USE SIGNAL ;
+    - _137_ ( _311_ Y ) ( _298_ A1 ) ( _295_ A ) ( _281_ A1 ) + USE SIGNAL ;
+    - _138_ ( _312_ Y ) ( _288_ A1 ) + USE SIGNAL ;
+    - _139_ ( _313_ Y ) ( _282_ A1 ) ( _195_ A ) ( _194_ A ) + USE SIGNAL ;
+    - _140_ ( _314_ Y ) ( _271_ A1 ) ( _270_ A ) + USE SIGNAL ;
+    - _141_ ( _315_ Y ) ( _269_ A1 ) + USE SIGNAL ;
+    - _142_ ( _316_ Y ) ( _265_ A1 ) ( _262_ A ) + USE SIGNAL ;
+    - _143_ ( _317_ Y ) ( _254_ A1 ) + USE SIGNAL ;
+    - _144_ ( _318_ Y ) ( _237_ A1 ) + USE SIGNAL ;
+    - _145_ ( _319_ Y ) ( _234_ A1 ) + USE SIGNAL ;
+    - _146_ ( _320_ Y ) ( _231_ A1 ) + USE SIGNAL ;
+    - _147_ ( _321_ Y ) ( _223_ A1 ) + USE SIGNAL ;
+    - _148_ ( _322_ Y ) ( _220_ A1 ) + USE SIGNAL ;
+    - _149_ ( _323_ Y ) ( _209_ A1 ) + USE SIGNAL ;
+    - _150_ ( _324_ Y ) ( _295_ B ) ( _283_ A1 ) ( _235_ A ) ( _221_ A ) + USE SIGNAL ;
+    - _151_ ( _325_ Y ) ( _261_ A ) ( _253_ B1 ) ( _240_ A ) ( _236_ B1 ) ( _222_ B1 ) ( _212_ B1 )
+      ( _208_ B1 ) ( _202_ B1 ) ( _199_ B1 ) + USE SIGNAL ;
+    - _152_ ( _327_ C ) ( _326_ X ) ( _211_ D ) ( _205_ B ) ( _204_ A2 ) ( _202_ A2 ) + USE SIGNAL ;
+    - _153_ ( _327_ X ) ( _210_ A2 ) ( _208_ A2 ) + USE SIGNAL ;
+    - _154_ ( _331_ A ) ( _328_ Y ) ( _235_ B ) ( _221_ B ) ( _171_ A ) + USE SIGNAL ;
+    - _155_ ( _329_ X ) ( _218_ D ) + USE SIGNAL ;
+    - _156_ ( _331_ B ) ( _330_ Y ) ( _235_ C ) ( _221_ C ) ( _171_ B ) + USE SIGNAL ;
+    - _157_ ( _331_ Y ) ( _297_ A ) ( _251_ B ) ( _243_ B ) ( _232_ C ) ( _229_ C ) ( _225_ C )
+      ( _224_ A2 ) ( _222_ A2 ) ( _198_ A ) ( _193_ A ) + USE SIGNAL ;
+    - _158_ ( _332_ X ) ( _229_ B ) + USE SIGNAL ;
+    - _159_ ( _333_ X ) ( _232_ B ) + USE SIGNAL ;
+    - _160_ ( _334_ Y ) ( _242_ A ) ( _235_ D ) ( _171_ C ) ( _170_ A ) + USE SIGNAL ;
+    - _161_ ( _335_ X ) ( _248_ D ) ( _247_ A3 ) + USE SIGNAL ;
+    - _162_ ( _242_ B ) ( _168_ Y ) + USE SIGNAL ;
+    - _163_ ( _171_ D ) ( _170_ B ) ( _169_ Y ) + USE SIGNAL ;
+    - _164_ ( _297_ B ) ( _279_ D1 ) ( _267_ C ) ( _266_ C ) ( _260_ C ) ( _259_ C ) ( _258_ A4 )
+      ( _256_ D ) ( _255_ A3 ) ( _253_ A3 ) ( _252_ C ) ( _251_ C ) ( _198_ B ) ( _193_ B ) ( _170_ Y ) + USE SIGNAL ;
+    - _165_ ( _302_ A ) ( _300_ B ) ( _290_ A ) ( _284_ B ) ( _277_ A ) ( _272_ A1 ) ( _264_ B )
+      ( _171_ Y ) + USE SIGNAL ;
+    - _166_ ( _302_ B ) ( _293_ A3 ) ( _173_ B ) ( _172_ X ) + USE SIGNAL ;
+    - _167_ ( _306_ A1 ) ( _305_ A ) ( _173_ Y ) + USE SIGNAL ;
+    - clk ( PIN clk ) ( _367_ CLK ) ( _366_ CLK ) ( _365_ CLK ) ( _364_ CLK ) ( _363_ CLK ) ( _362_ CLK )
+      ( _361_ CLK ) ( _360_ CLK ) ( _359_ CLK ) ( _358_ CLK ) ( _357_ CLK ) ( _356_ CLK ) ( _355_ CLK ) ( _354_ CLK )
+      ( _353_ CLK ) ( _352_ CLK ) ( _351_ CLK ) ( _350_ CLK ) ( _349_ CLK ) ( _348_ CLK ) ( _347_ CLK ) ( _346_ CLK )
+      ( _345_ CLK ) ( _344_ CLK ) ( _343_ CLK ) ( _342_ CLK ) ( _341_ CLK ) ( _340_ CLK ) ( _339_ CLK ) ( _338_ CLK )
+      ( _337_ CLK ) ( _336_ CLK ) + USE SIGNAL ;
+    - count[0] ( PIN count[0] ) ( _336_ Q ) ( _328_ D ) ( _326_ B ) ( _201_ A3 ) ( _199_ A3 ) ( _197_ B1 ) + USE SIGNAL ;
+    - count[10] ( PIN count[10] ) ( _346_ Q ) ( _334_ B ) ( _333_ A ) ( _319_ A ) + USE SIGNAL ;
+    - count[11] ( PIN count[11] ) ( _347_ Q ) ( _334_ A ) ( _318_ A ) + USE SIGNAL ;
+    - count[12] ( PIN count[12] ) ( _348_ Q ) ( _335_ B ) ( _241_ A3 ) ( _239_ C ) ( _238_ B1 ) ( _169_ D )
+      ( _168_ B ) + USE SIGNAL ;
+    - count[13] ( PIN count[13] ) ( _349_ Q ) ( _335_ A ) ( _241_ B1 ) ( _169_ C ) ( _168_ A ) + USE SIGNAL ;
+    - count[14] ( PIN count[14] ) ( _350_ Q ) ( _248_ C ) ( _247_ B1 ) ( _169_ B ) + USE SIGNAL ;
+    - count[15] ( PIN count[15] ) ( _351_ Q ) ( _317_ A ) ( _169_ A ) + USE SIGNAL ;
+    - count[16] ( PIN count[16] ) ( _352_ Q ) ( _263_ C ) ( _258_ A3 ) ( _256_ C ) ( _255_ B1 ) ( _182_ D )
+      ( _181_ D ) ( _180_ B ) + USE SIGNAL ;
+    - count[17] ( PIN count[17] ) ( _353_ Q ) ( _263_ B ) ( _258_ B1 ) ( _182_ C ) ( _181_ C ) ( _180_ A ) + USE SIGNAL ;
+    - count[18] ( PIN count[18] ) ( _354_ Q ) ( _316_ A ) ( _263_ A ) ( _184_ C ) ( _182_ B ) ( _181_ B ) + USE SIGNAL ;
+    - count[19] ( PIN count[19] ) ( _355_ Q ) ( _315_ A ) ( _184_ B ) ( _182_ A ) ( _181_ A ) + USE SIGNAL ;
+    - count[1] ( PIN count[1] ) ( _337_ Q ) ( _328_ C ) ( _326_ A ) ( _201_ B1 ) + USE SIGNAL ;
+    - count[20] ( PIN count[20] ) ( _356_ Q ) ( _314_ A ) ( _276_ C ) ( _190_ D ) ( _189_ C ) ( _184_ A )
+      ( _183_ B ) + USE SIGNAL ;
+    - count[21] ( PIN count[21] ) ( _357_ Q ) ( _276_ B ) ( _272_ B1 ) ( _190_ C ) ( _189_ B ) ( _183_ A ) + USE SIGNAL ;
+    - count[22] ( PIN count[22] ) ( _358_ Q ) ( _276_ A ) ( _275_ B1_N ) ( _190_ B ) ( _189_ A ) ( _186_ B ) + USE SIGNAL ;
+    - count[23] ( PIN count[23] ) ( _359_ Q ) ( _313_ A ) ( _196_ A ) ( _190_ A ) ( _186_ A ) + USE SIGNAL ;
+    - count[24] ( PIN count[24] ) ( _360_ Q ) ( _286_ C1 ) ( _284_ A ) ( _283_ B1_N ) ( _177_ D ) ( _176_ C )
+      ( _175_ C ) + USE SIGNAL ;
+    - count[25] ( PIN count[25] ) ( _361_ Q ) ( _312_ A ) ( _286_ B1 ) ( _177_ C ) ( _176_ B ) ( _175_ B ) + USE SIGNAL ;
+    - count[26] ( PIN count[26] ) ( _362_ Q ) ( _289_ B1_N ) ( _177_ B ) ( _176_ A ) ( _175_ A ) + USE SIGNAL ;
+    - count[27] ( PIN count[27] ) ( _363_ Q ) ( _311_ A ) ( _296_ C ) ( _177_ A ) + USE SIGNAL ;
+    - count[28] ( PIN count[28] ) ( _364_ Q ) ( _300_ A ) ( _299_ B1_N ) ( _174_ D ) ( _172_ B ) + USE SIGNAL ;
+    - count[29] ( PIN count[29] ) ( _365_ Q ) ( _310_ A ) ( _174_ C ) ( _172_ A ) + USE SIGNAL ;
+    - count[2] ( PIN count[2] ) ( _338_ Q ) ( _328_ B ) ( _327_ B ) ( _211_ C ) ( _205_ D ) ( _204_ B1 ) + USE SIGNAL ;
+    - count[30] ( PIN count[30] ) ( _366_ Q ) ( _309_ A ) ( _293_ A2 ) ( _174_ B ) ( _173_ A ) + USE SIGNAL ;
+    - count[31] ( PIN count[31] ) ( _367_ Q ) ( _308_ A1 ) ( _293_ A1 ) ( _174_ A ) + USE SIGNAL ;
+    - count[3] ( PIN count[3] ) ( _339_ Q ) ( _328_ A ) ( _327_ A ) ( _323_ A ) ( _211_ B ) + USE SIGNAL ;
+    - count[4] ( PIN count[4] ) ( _340_ Q ) ( _330_ D ) ( _211_ A ) ( _210_ B1 ) + USE SIGNAL ;
+    - count[5] ( PIN count[5] ) ( _341_ Q ) ( _330_ C ) ( _329_ B ) ( _215_ C ) ( _214_ B1 ) + USE SIGNAL ;
+    - count[6] ( PIN count[6] ) ( _342_ Q ) ( _330_ B ) ( _329_ A ) ( _322_ A ) + USE SIGNAL ;
+    - count[7] ( PIN count[7] ) ( _343_ Q ) ( _330_ A ) ( _321_ A ) + USE SIGNAL ;
+    - count[8] ( PIN count[8] ) ( _344_ Q ) ( _334_ D ) ( _333_ C ) ( _332_ B ) ( _225_ A ) ( _224_ B1 ) + USE SIGNAL ;
+    - count[9] ( PIN count[9] ) ( _345_ Q ) ( _334_ C ) ( _333_ B ) ( _332_ A ) ( _320_ A ) + USE SIGNAL ;
+    - en ( PIN en ) ( _324_ A ) ( _296_ D ) ( _286_ D1 ) ( _281_ B1 ) ( _276_ D ) ( _272_ A4 )
+      ( _264_ A ) ( _251_ A ) ( _243_ A ) ( _232_ D ) ( _229_ D ) ( _225_ B ) ( _224_ A3 ) ( _222_ A3 )
+      ( _218_ C ) ( _215_ D ) ( _214_ A3 ) ( _212_ A3 ) ( _210_ A3 ) ( _208_ A3 ) ( _205_ C ) ( _204_ A3 )
+      ( _202_ A3 ) ( _201_ A2 ) ( _199_ A2 ) ( _197_ A2 ) + USE SIGNAL ;
+    - rst_n ( PIN rst_n ) ( _325_ A ) ( _308_ B1 ) ( _306_ B1 ) ( _303_ B ) ( _301_ B ) ( _294_ B1 )
+      ( _291_ B1 ) ( _287_ B1 ) ( _285_ C ) ( _280_ B ) ( _278_ B ) ( _273_ B1 ) ( _271_ B1 ) ( _268_ B1 )
+      ( _265_ B1 ) ( _257_ C ) ( _249_ B ) ( _245_ B ) ( _233_ B ) ( _230_ B ) ( _227_ B ) ( _219_ B )
+      ( _216_ B ) ( _206_ B ) + USE SIGNAL ;
+END NETS
+END DESIGN

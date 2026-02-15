@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/g/my_designs/pm32/runs/RUN_2026-02-12_18-41-11/tmp/3ea0107d950a4a6f8a9ab32c983016cb.lib ",
+   "modules": {
+      "\\counter32": {
+         "num_wires":         64,
+         "num_wire_bits":     157,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 35,
+         "num_ports":         4,
+         "num_port_bits":     35,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         122,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 16,
+            "$_AND_": 5,
+            "$_NAND_": 15,
+            "$_NOT_": 1,
+            "$_ORNOT_": 6,
+            "$_OR_": 16,
+            "$_SDFFE_PN0P_": 32,
+            "$_XNOR_": 11,
+            "$_XOR_": 20
+         }
+      }
+   },
+      "design": {
+         "num_wires":         64,
+         "num_wire_bits":     157,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 35,
+         "num_ports":         4,
+         "num_port_bits":     35,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         122,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 16,
+            "$_AND_": 5,
+            "$_NAND_": 15,
+            "$_NOT_": 1,
+            "$_ORNOT_": 6,
+            "$_OR_": 16,
+            "$_SDFFE_PN0P_": 32,
+            "$_XNOR_": 11,
+            "$_XOR_": 20
+         }
+      }
+}
+

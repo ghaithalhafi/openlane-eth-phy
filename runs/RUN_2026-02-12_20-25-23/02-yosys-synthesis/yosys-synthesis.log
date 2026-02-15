@@ -1,0 +1,1039 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Liberty frontend: /home/g/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+[INFO] Using SDC file '/home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/02-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+2. Executing Verilog-2005 frontend: /home/g/my_designs/eth_phy_1g/rtl/phy_top_1g.v
+Parsing SystemVerilog input from `/home/g/my_designs/eth_phy_1g/rtl/phy_top_1g.v' to AST representation.
+Storing AST representation for module `$abstract\eth_phy_1g'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v
+Parsing SystemVerilog input from `/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v' to AST representation.
+Storing AST representation for module `$abstract\pcs_tx_8b10b'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+5. Executing AST frontend in derive mode using pre-parsed AST for module `\eth_phy_1g'.
+Generating RTLIL representation for module `\eth_phy_1g'.
+
+5.1. Analyzing design hierarchy..
+Top module:  \eth_phy_1g
+
+5.2. Executing AST frontend in derive mode using pre-parsed AST for module `\pcs_tx_8b10b'.
+Generating RTLIL representation for module `\pcs_tx_8b10b'.
+
+5.3. Analyzing design hierarchy..
+Top module:  \eth_phy_1g
+Used module:     \pcs_tx_8b10b
+
+5.4. Analyzing design hierarchy..
+Top module:  \eth_phy_1g
+Used module:     \pcs_tx_8b10b
+Removing unused module `$abstract\pcs_tx_8b10b'.
+Removing unused module `$abstract\eth_phy_1g'.
+Removed 2 unused modules.
+Renaming module eth_phy_1g to eth_phy_1g.
+
+6. Generating Graphviz representation of design.
+Writing dot description to `/home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/02-yosys-synthesis/hierarchy.dot'.
+Dumping module eth_phy_1g to page 1.
+
+7. Executing TRIBUF pass.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \eth_phy_1g
+Used module:     \pcs_tx_8b10b
+
+8.2. Analyzing design hierarchy..
+Top module:  \eth_phy_1g
+Used module:     \pcs_tx_8b10b
+Removed 0 unused modules.
+
+9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1 in module pcs_tx_8b10b.
+Removed a total of 0 dead cases.
+
+11. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 0 assignments to connections.
+
+12. Executing PROC_INIT pass (extract init attributes).
+
+13. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\pcs_tx_8b10b.$proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1'.
+
+14. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+15. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pcs_tx_8b10b.$proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1'.
+     1/3: $0\valid_out[0:0]
+     2/3: $0\rd_pos[0:0]
+     3/3: $0\data_out[9:0]
+
+16. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+17. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pcs_tx_8b10b.\data_out' using process `\pcs_tx_8b10b.$proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1'.
+  created $adff cell `$procdff$24' with positive edge clock and positive level reset.
+Creating register for signal `\pcs_tx_8b10b.\valid_out' using process `\pcs_tx_8b10b.$proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1'.
+  created $adff cell `$procdff$27' with positive edge clock and positive level reset.
+Creating register for signal `\pcs_tx_8b10b.\rd_pos' using process `\pcs_tx_8b10b.$proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1'.
+  created $adff cell `$procdff$30' with positive edge clock and positive level reset.
+
+18. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+19. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\pcs_tx_8b10b.$proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1'.
+Removing empty process `pcs_tx_8b10b.$proc$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:12$1'.
+Cleaned up 2 empty switches.
+
+20. Executing CHECK pass (checking for obvious problems).
+Checking module eth_phy_1g...
+Checking module pcs_tx_8b10b...
+Found and reported 0 problems.
+
+21. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+Optimizing module pcs_tx_8b10b.
+<suppressed ~4 debug messages>
+
+22. Executing FLATTEN pass (flatten design).
+Deleting now unused module pcs_tx_8b10b.
+<suppressed ~1 debug messages>
+
+23. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~1 debug messages>
+
+25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+26. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \eth_phy_1g..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $flatten\u_pcs.$procmux$8: \eth_valid_in -> 1'1
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \eth_phy_1g.
+Performed a total of 0 changes.
+
+29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+30. Executing OPT_DFF pass (perform DFF optimizations).
+
+31. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+32. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+33. Executing FSM pass (extract and optimize FSM).
+
+33.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking eth_phy_1g.u_pcs.data_out as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+
+33.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+33.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+33.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+33.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+33.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+33.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+34. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+35. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+36. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \eth_phy_1g..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+37. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \eth_phy_1g.
+Performed a total of 0 changes.
+
+38. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+39. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\u_pcs.$procdff$30 ($adff) from module eth_phy_1g (D = $flatten\u_pcs.$not$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:26$6_Y, Q = \u_pcs.rd_pos).
+Adding EN signal on $flatten\u_pcs.$procdff$24 ($adff) from module eth_phy_1g (D = $flatten\u_pcs.$procmux$15_Y, Q = \u_pcs.data_out).
+
+40. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~3 debug messages>
+
+41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+42. Rerunning OPT passes. (Maybe there is more to do…)
+
+43. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \eth_phy_1g..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+44. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \eth_phy_1g.
+Performed a total of 0 changes.
+
+45. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+46. Executing OPT_DFF pass (perform DFF optimizations).
+
+47. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+48. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+49. Executing WREDUCE pass (reducing word size of cells).
+Removed top 7 bits (of 8) from port B of cell eth_phy_1g.$flatten\u_pcs.$procmux$18_CMP0 ($eq).
+Removed top 6 bits (of 8) from port B of cell eth_phy_1g.$flatten\u_pcs.$procmux$17_CMP0 ($eq).
+Removed top 6 bits (of 8) from port B of cell eth_phy_1g.$flatten\u_pcs.$procmux$16_CMP0 ($eq).
+
+50. Executing PEEPOPT pass (run peephole optimizers).
+
+51. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+52. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module eth_phy_1g:
+  created 0 $alu and 0 $macc cells.
+
+53. Executing SHARE pass (SAT-based resource sharing).
+
+54. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+55. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+56. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \eth_phy_1g..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+57. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \eth_phy_1g.
+Performed a total of 0 changes.
+
+58. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+59. Executing OPT_DFF pass (perform DFF optimizations).
+
+60. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+61. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+62. Executing MEMORY pass.
+
+62.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+62.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+62.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+62.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+62.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+62.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+62.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+62.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+62.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+62.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+63. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+64. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+<suppressed ~1 debug messages>
+
+65. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+66. Executing OPT_DFF pass (perform DFF optimizations).
+
+67. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+68. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+69. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+70. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+71. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \eth_phy_1g..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+72. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \eth_phy_1g.
+    Consolidated identical input bits for $mux cell $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2:
+      Old ports: A=10'0100011011, B=10'1011100100, Y=$flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y
+      New ports: A=2'01, B=2'10, Y={ $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [2] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] }
+      New connections: { $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [9:3] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [1] } = { $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [2] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [2] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [2] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [2] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] }
+    Consolidated identical input bits for $mux cell $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3:
+      Old ports: A=10'0100011010, B=10'1011100101, Y=$flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y
+      New ports: A=2'10, B=2'01, Y=$flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [1:0]
+      New connections: $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [9:2] = { $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [1:0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [1] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [1:0] }
+    Consolidated identical input bits for $mux cell $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4:
+      Old ports: A=10'0100011001, B=10'1011100110, Y=$flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y
+      New ports: A=2'01, B=2'10, Y=$flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1:0]
+      New connections: $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [9:2] = { $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1:0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1:0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1] }
+    Consolidated identical input bits for $mux cell $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5:
+      Old ports: A=10'0100011000, B=10'1011100111, Y=$flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y
+      New ports: A=2'10, B=2'01, Y={ $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [3] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] }
+      New connections: { $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [9:4] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [2:1] } = { $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [3] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [3] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] }
+  Optimizing cells in module \eth_phy_1g.
+    Consolidated identical input bits for $pmux cell $flatten\u_pcs.$procmux$15:
+      Old ports: A=10'1010101010, B={ $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y }, Y=$flatten\u_pcs.$procmux$15_Y
+      New ports: A=6'101010, B={ $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [2] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [2] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:19$2_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [1] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [1:0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:20$3_Y [1:0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1:0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:21$4_Y [1:0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [3] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [3] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] $flatten\u_pcs.$ternary$/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v:22$5_Y [0] }, Y=$flatten\u_pcs.$procmux$15_Y [5:0]
+      New connections: $flatten\u_pcs.$procmux$15_Y [9:6] = { $flatten\u_pcs.$procmux$15_Y [5:4] $flatten\u_pcs.$procmux$15_Y [5] $flatten\u_pcs.$procmux$15_Y [2] }
+  Optimizing cells in module \eth_phy_1g.
+Performed a total of 5 changes.
+
+73. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+74. Executing OPT_SHARE pass.
+
+75. Executing OPT_DFF pass (perform DFF optimizations).
+
+76. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+77. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+78. Rerunning OPT passes. (Maybe there is more to do…)
+
+79. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \eth_phy_1g..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+80. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \eth_phy_1g.
+Performed a total of 0 changes.
+
+81. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+82. Executing OPT_SHARE pass.
+
+83. Executing OPT_DFF pass (perform DFF optimizations).
+
+84. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+85. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+86. Executing TECHMAP pass (map to technology primitives).
+
+86.1. Executing Verilog-2005 frontend: /nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+86.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$f3115659d5e2977ebd2cb01ff3557fc5f6187689\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~109 debug messages>
+
+87. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+<suppressed ~26 debug messages>
+
+88. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+<suppressed ~132 debug messages>
+Removed a total of 44 cells.
+
+89. Executing OPT_DFF pass (perform DFF optimizations).
+
+90. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 0 unused cells and 44 unused wires.
+<suppressed ~1 debug messages>
+
+91. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+92. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+93. Executing OPT_DFF pass (perform DFF optimizations).
+
+94. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+95. Executing ABC pass (technology mapping using ABC).
+
+95.1. Extracting gate netlist of module `\eth_phy_1g' to `<abc-temp-dir>/input.blif'..
+Extracted 50 gates and 61 wires to a netlist network with 9 inputs and 7 outputs.
+
+95.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+95.1.2. Re-integrating ABC results.
+ABC RESULTS:               NOT cells:        1
+ABC RESULTS:               NOR cells:        1
+ABC RESULTS:             ORNOT cells:        2
+ABC RESULTS:              NAND cells:        2
+ABC RESULTS:            ANDNOT cells:       13
+ABC RESULTS:                OR cells:       25
+ABC RESULTS:        internal signals:       45
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:        7
+Removing temp directory.
+
+96. Executing OPT pass (performing simple optimizations).
+
+96.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+96.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+96.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+96.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 0 unused cells and 38 unused wires.
+<suppressed ~1 debug messages>
+
+96.5. Finished fast OPT passes.
+
+97. Executing HIERARCHY pass (managing design hierarchy).
+
+97.1. Analyzing design hierarchy..
+Top module:  \eth_phy_1g
+
+97.2. Analyzing design hierarchy..
+Top module:  \eth_phy_1g
+Removed 0 unused modules.
+
+98. Executing CHECK pass (checking for obvious problems).
+Checking module eth_phy_1g...
+Found and reported 0 problems.
+
+99. Printing statistics.
+
+=== eth_phy_1g ===
+
+   Number of wires:                 52
+   Number of wire bits:            112
+   Number of public wires:          13
+   Number of public wire bits:      45
+   Number of ports:                  6
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 53
+     $_ANDNOT_                      13
+     $_DFFE_PP0P_                    7
+     $_DFF_PP0_                      1
+     $_NAND_                         2
+     $_NOR_                          1
+     $_NOT_                          1
+     $_ORNOT_                        2
+     $_OR_                          25
+     $scopeinfo                      1
+
+100. Generating Graphviz representation of design.
+Writing dot description to `/home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/02-yosys-synthesis/primitive_techmap.dot'.
+Dumping module eth_phy_1g to page 1.
+
+101. Executing OPT pass (performing simple optimizations).
+
+101.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+101.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+101.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \eth_phy_1g..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+101.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \eth_phy_1g.
+Performed a total of 0 changes.
+
+101.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\eth_phy_1g'.
+Removed a total of 0 cells.
+
+101.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+101.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+
+101.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module eth_phy_1g.
+
+101.9. Finished OPT passes. (There is nothing left to do.)
+
+102. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 1 unused cells and 6 unused wires.
+<suppressed ~7 debug messages>
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/tmp/2a5d597221414a7a91bb7fd8eb90aa32.lib ",
+   "modules": {
+      "\\eth_phy_1g": {
+         "num_wires":         46,
+         "num_wire_bits":     90,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         52,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 13,
+            "$_DFFE_PP0P_": 7,
+            "$_DFF_PP0_": 1,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 25
+         }
+      }
+   },
+      "design": {
+         "num_wires":         46,
+         "num_wire_bits":     90,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         52,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 13,
+            "$_DFFE_PP0P_": 7,
+            "$_DFF_PP0_": 1,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 25
+         }
+      }
+}
+
+103. Printing statistics.
+
+=== eth_phy_1g ===
+
+   Number of wires:                 46
+   Number of wire bits:             90
+   Number of public wires:           7
+   Number of public wire bits:      23
+   Number of ports:                  6
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $_ANDNOT_                      13
+     $_DFFE_PP0P_                    7
+     $_DFF_PP0_                      1
+     $_NAND_                         2
+     $_NOR_                          1
+     $_NOT_                          1
+     $_ORNOT_                        2
+     $_OR_                          25
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+   Area for cell type $_DFFE_PP0P_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/g/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+104. Executing TECHMAP pass (map to technology primitives).
+
+104.1. Executing Verilog-2005 frontend: /home/g/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/g/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+104.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+105. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/g/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+106. Executing TECHMAP pass (map to technology primitives).
+
+106.1. Executing Verilog-2005 frontend: /home/g/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/g/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+106.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+107. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+108. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+108.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\eth_phy_1g':
+  mapped 8 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/tmp/2a5d597221414a7a91bb7fd8eb90aa32.lib ",
+   "modules": {
+      "\\eth_phy_1g": {
+         "num_wires":         61,
+         "num_wire_bits":     105,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         67,
+         "area":              210.201600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 13,
+            "$_MUX_": 7,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 9,
+            "$_ORNOT_": 2,
+            "$_OR_": 25,
+            "sky130_fd_sc_hd__dfrtp_2": 8
+         }
+      }
+   },
+      "design": {
+         "num_wires":         61,
+         "num_wire_bits":     105,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         67,
+         "area":              210.201600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 13,
+            "$_MUX_": 7,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 9,
+            "$_ORNOT_": 2,
+            "$_OR_": 25,
+            "sky130_fd_sc_hd__dfrtp_2": 8
+         }
+      }
+}
+
+109. Printing statistics.
+
+=== eth_phy_1g ===
+
+   Number of wires:                 61
+   Number of wire bits:            105
+   Number of public wires:           7
+   Number of public wire bits:      23
+   Number of ports:                  6
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 67
+     $_ANDNOT_                      13
+     $_MUX_                          7
+     $_NAND_                         2
+     $_NOR_                          1
+     $_NOT_                          9
+     $_ORNOT_                        2
+     $_OR_                          25
+     sky130_fd_sc_hd__dfrtp_2        8
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\eth_phy_1g': 210.201600
+     of which used for sequential elements: 210.201600 (100.00%)
+
+[INFO] Using generated ABC script '/home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/02-yosys-synthesis/AREA_0.abc'…
+
+110. Executing ABC pass (technology mapping using ABC).
+
+110.1. Extracting gate netlist of module `\eth_phy_1g' to `/tmp/yosys-abc-fHsiYI/input.blif'..
+Extracted 59 gates and 76 wires to a netlist network with 17 inputs and 15 outputs.
+
+110.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-fHsiYI/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-fHsiYI/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-fHsiYI/input.blif 
+ABC: + read_lib -w /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/tmp/2a5d597221414a7a91bb7fd8eb90aa32.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.05 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/tmp/2a5d597221414a7a91bb7fd8eb90aa32.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.10 sec
+ABC: Memory =    9.54 MB. Time =     0.10 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/02-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/02-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =     27 ( 40.7 %)   Cap = 15.8 ff (  6.0 %)   Area =      198.94 ( 55.6 %)   Delay =  1566.37 ps  ( 14.8 %)               
+ABC: Path  0 --      13 : 0    1 pi                        A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   1.5 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      37 : 4    2 sky130_fd_sc_hd__or4_2    A =   8.76  Df = 669.5 -565.4 ps  S = 116.1 ps  Cin =  1.5 ff  Cout =   7.2 ff  Cmax = 310.4 ff  G =  444  
+ABC: Path  2 --      39 : 4    5 sky130_fd_sc_hd__o31a_2   A =  10.01  Df =1016.7 -743.5 ps  S = 106.6 ps  Cin =  2.3 ff  Cout =  16.8 ff  Cmax = 285.7 ff  G =  670  
+ABC: Path  3 --      41 : 4    1 sky130_fd_sc_hd__a211oi_2 A =  12.51  Df =1566.4-1180.0 ps  S = 619.0 ps  Cin =  4.4 ff  Cout =  33.4 ff  Cmax =  88.8 ff  G =  767  
+ABC: Start-point = pi12 (\eth_data_in [5]).  End-point = po0 ($auto$rtlil.cc:2739:MuxGate$369).
+ABC: netlist                       : i/o =   17/   15  lat =    0  nd =    27  edge =     61  area =198.92  delay = 3.00  lev = 3
+ABC: + write_blif /tmp/yosys-abc-fHsiYI/output.blif 
+
+110.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:       11
+ABC RESULTS:        internal signals:       44
+ABC RESULTS:           input signals:       17
+ABC RESULTS:          output signals:       15
+Removing temp directory.
+
+111. Executing SETUNDEF pass (replace undef values with defined constants).
+
+112. Executing HILOMAP pass (mapping to constant drivers).
+
+113. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+114. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \eth_phy_1g..
+Removed 0 unused cells and 99 unused wires.
+<suppressed ~1 debug messages>
+
+115. Executing INSBUF pass (insert buffer cells for connected wires).
+Add eth_phy_1g/$auto$insbuf.cc:97:execute$400: \phy_data_out [6] -> \phy_data_out [2]
+Add eth_phy_1g/$auto$insbuf.cc:97:execute$401: \phy_data_out [8] -> \phy_data_out [4]
+Add eth_phy_1g/$auto$insbuf.cc:97:execute$402: \phy_data_out [9] -> \phy_data_out [5]
+Add eth_phy_1g/$auto$insbuf.cc:97:execute$403: \phy_data_out [9] -> \phy_data_out [7]
+
+116. Executing CHECK pass (checking for obvious problems).
+Checking module eth_phy_1g...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/tmp/2a5d597221414a7a91bb7fd8eb90aa32.lib ",
+   "modules": {
+      "\\eth_phy_1g": {
+         "num_wires":         34,
+         "num_wire_bits":     50,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         39,
+         "area":              429.161600,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211o_2": 3,
+            "sky130_fd_sc_hd__a211oi_2": 2,
+            "sky130_fd_sc_hd__a22o_2": 1,
+            "sky130_fd_sc_hd__and2_2": 2,
+            "sky130_fd_sc_hd__and2b_2": 1,
+            "sky130_fd_sc_hd__buf_2": 4,
+            "sky130_fd_sc_hd__dfrtp_2": 8,
+            "sky130_fd_sc_hd__inv_2": 11,
+            "sky130_fd_sc_hd__mux2_1": 1,
+            "sky130_fd_sc_hd__nor2_2": 1,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__o31a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 1,
+            "sky130_fd_sc_hd__or4_2": 1,
+            "sky130_fd_sc_hd__xor2_2": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         34,
+         "num_wire_bits":     50,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 23,
+         "num_ports":         6,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         39,
+         "area":              429.161600,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211o_2": 3,
+            "sky130_fd_sc_hd__a211oi_2": 2,
+            "sky130_fd_sc_hd__a22o_2": 1,
+            "sky130_fd_sc_hd__and2_2": 2,
+            "sky130_fd_sc_hd__and2b_2": 1,
+            "sky130_fd_sc_hd__buf_2": 4,
+            "sky130_fd_sc_hd__dfrtp_2": 8,
+            "sky130_fd_sc_hd__inv_2": 11,
+            "sky130_fd_sc_hd__mux2_1": 1,
+            "sky130_fd_sc_hd__nor2_2": 1,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__o31a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 1,
+            "sky130_fd_sc_hd__or4_2": 1,
+            "sky130_fd_sc_hd__xor2_2": 1
+         }
+      }
+}
+
+117. Printing statistics.
+
+=== eth_phy_1g ===
+
+   Number of wires:                 34
+   Number of wire bits:             50
+   Number of public wires:           7
+   Number of public wire bits:      23
+   Number of ports:                  6
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 39
+     sky130_fd_sc_hd__a211o_2        3
+     sky130_fd_sc_hd__a211oi_2       2
+     sky130_fd_sc_hd__a22o_2         1
+     sky130_fd_sc_hd__and2_2         2
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__buf_2          4
+     sky130_fd_sc_hd__dfrtp_2        8
+     sky130_fd_sc_hd__inv_2         11
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__o31a_2         1
+     sky130_fd_sc_hd__or2_2          1
+     sky130_fd_sc_hd__or4_2          1
+     sky130_fd_sc_hd__xor2_2         1
+
+   Chip area for module '\eth_phy_1g': 429.161600
+     of which used for sequential elements: 210.201600 (48.98%)
+
+118. Executing Verilog backend.
+Dumping module `\eth_phy_1g'.
+
+119. Executing JSON backend.

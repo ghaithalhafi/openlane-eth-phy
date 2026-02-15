@@ -1,0 +1,25 @@
+Starting…
+Gating variable for step 'Verilator.Lint' set to 'False'- the step will be skipped.
+Skipping step 'Verilator Lint'…
+Gating variable for step 'Checker.LintTimingConstructs' set to 'False'- the step will be skipped.
+Skipping step 'Lint Timing Error Checker'…
+Gating variable for step 'Checker.LintErrors' set to 'False'- the step will be skipped.
+Skipping step 'Lint Errors Checker'…
+Gating variable for step 'Checker.LintWarnings' set to 'False'- the step will be skipped.
+Skipping step 'Lint Warnings Checker'…
+Running 'Yosys.JsonHeader' at 'my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-19-54/01-yosys-jsonheader'…
+Logging subprocess to [repr.filename]'my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-19-54/01-yosys-jsonheader/yosys-jsonheader.log'[/repr.filename]…
+Subprocess had a non-zero exit.
+Last 10 line(s):
+Storing AST representation for module `$abstract\phy_top_1g'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v
+Parsing SystemVerilog input from `/home/g/my_designs/eth_phy_1g/rtl/pcs_tx_8b10b.v' to AST representation.
+Storing AST representation for module `$abstract\pcs_tx_8b10b'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+ERROR: Module `eth_phy_1g' not found!
+
+Full log file: 'my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-19-54/01-yosys-jsonheader/yosys-jsonheader.log'

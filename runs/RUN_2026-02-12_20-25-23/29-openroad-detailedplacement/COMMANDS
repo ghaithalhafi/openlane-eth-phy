@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/29-openroad-detailedplacement/or_metrics_out.json /nix/store/h0ldzjka94yryiq8yxbxmwargpnmwhx6-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/openroad/dpl.tcl

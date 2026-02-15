@@ -1,0 +1,18 @@
+digraph "eth_phy_1g" {
+label="eth_phy_1g";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="phy_valid_out", color="black", fontcolor="black"];
+n2 [ shape=octagon, label="phy_data_out", color="black", fontcolor="black"];
+n3 [ shape=octagon, label="eth_valid_in", color="black", fontcolor="black"];
+n4 [ shape=octagon, label="eth_data_in", color="black", fontcolor="black"];
+n5 [ shape=octagon, label="rst", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="clk", color="black", fontcolor="black"];
+c11 [ shape=record, label="{{<p6> clk|<p7> data_in|<p5> rst|<p8> valid_in}|u_pcs\npcs_tx_8b10b|{<p9> data_out|<p10> valid_out}}",  ];
+c11:p10:e -> n1:w [color="black", fontcolor="black", label=""];
+c11:p9:e -> n2:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n3:e -> c11:p8:w [color="black", fontcolor="black", label=""];
+n4:e -> c11:p7:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> c11:p5:w [color="black", fontcolor="black", label=""];
+n6:e -> c11:p6:w [color="black", fontcolor="black", label=""];
+}

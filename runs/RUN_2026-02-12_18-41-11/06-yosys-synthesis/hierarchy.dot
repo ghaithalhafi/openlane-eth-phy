@@ -1,0 +1,27 @@
+digraph "counter32" {
+label="counter32";
+rankdir="LR";
+remincross=true;
+n5 [ shape=octagon, label="count", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="en", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="rst_n", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="clk", color="black", fontcolor="black"];
+v0 [ label="1" ];
+c12 [ shape=record, label="{{<p9> A|<p10> B}|$4\n$add|{<p11> Y}}",  ];
+v1 [ label="32'11111111111111111111111111111111" ];
+c13 [ shape=record, label="{{<p9> A|<p10> B}|$3\n$ne|{<p11> Y}}",  ];
+c14 [ shape=record, label="{{<p9> A}|$2\n$logic_not|{<p11> Y}}",  ];
+p2 [shape=box, style=rounded, label="PROC $1\n/home/g/my_designs/pm32/src/counter32.v:8.5-25.8", ];
+c12:p11:e -> p2:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c13:p11:e -> p2:w [color="black", fontcolor="black", label=""];
+c14:p11:e -> p2:w [color="black", fontcolor="black", label=""];
+p2:e -> n5:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> c12:p9:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> c13:p9:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> p2:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n6:e -> p2:w [color="black", fontcolor="black", label=""];
+n7:e -> c14:p9:w [color="black", fontcolor="black", label=""];
+n8:e -> p2:w [color="black", fontcolor="black", label=""];
+v0:e -> c12:p10:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+v1:e -> c13:p10:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}

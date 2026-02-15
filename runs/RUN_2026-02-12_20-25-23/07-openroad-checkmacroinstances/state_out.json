@@ -1,0 +1,27 @@
+{
+    "nl": "/home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/02-yosys-synthesis/eth_phy_1g.nl.v",
+    "pnl": null,
+    "pnl-sdf-friendly": null,
+    "pnl-npc": null,
+    "def": null,
+    "lef": null,
+    "openroad-lef": null,
+    "odb": null,
+    "sdc": null,
+    "sdf": null,
+    "spef": null,
+    "lib": null,
+    "spice": null,
+    "mag": null,
+    "gds": null,
+    "mag_gds": null,
+    "klayout_gds": null,
+    "json_h": "/home/g/my_designs/eth_phy_1g/runs/RUN_2026-02-12_20-25-23/01-yosys-jsonheader/eth_phy_1g.h.json",
+    "vh": null,
+    "metrics": {
+        "design__instance__count": 39,
+        "design__instance__area": 429.1616,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

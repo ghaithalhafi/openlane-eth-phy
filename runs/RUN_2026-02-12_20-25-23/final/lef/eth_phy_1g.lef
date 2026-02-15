@@ -1,0 +1,265 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO eth_phy_1g
+  CLASS BLOCK ;
+  FOREIGN eth_phy_1g ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 40.335 BY 51.055 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.340 10.640 25.940 38.320 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 38.320 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 20.440 4.000 21.040 ;
+    END
+  END clk
+  PIN eth_data_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 19.410 47.055 19.690 51.055 ;
+    END
+  END eth_data_in[0]
+  PIN eth_data_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 0.000 22.910 4.000 ;
+    END
+  END eth_data_in[1]
+  PIN eth_data_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 9.750 47.055 10.030 51.055 ;
+    END
+  END eth_data_in[2]
+  PIN eth_data_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 23.840 4.000 24.440 ;
+    END
+  END eth_data_in[3]
+  PIN eth_data_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 44.240 4.000 44.840 ;
+    END
+  END eth_data_in[4]
+  PIN eth_data_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 37.440 4.000 38.040 ;
+    END
+  END eth_data_in[5]
+  PIN eth_data_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 40.840 4.000 41.440 ;
+    END
+  END eth_data_in[6]
+  PIN eth_data_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 34.040 4.000 34.640 ;
+    END
+  END eth_data_in[7]
+  PIN eth_valid_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 47.055 22.910 51.055 ;
+    END
+  END eth_valid_in
+  PIN phy_data_out[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END phy_data_out[0]
+  PIN phy_data_out[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 36.335 13.640 40.335 14.240 ;
+    END
+  END phy_data_out[1]
+  PIN phy_data_out[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 36.335 17.040 40.335 17.640 ;
+    END
+  END phy_data_out[2]
+  PIN phy_data_out[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 17.040 4.000 17.640 ;
+    END
+  END phy_data_out[3]
+  PIN phy_data_out[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 36.335 34.040 40.335 34.640 ;
+    END
+  END phy_data_out[4]
+  PIN phy_data_out[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 47.055 13.250 51.055 ;
+    END
+  END phy_data_out[5]
+  PIN phy_data_out[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 36.335 20.440 40.335 21.040 ;
+    END
+  END phy_data_out[6]
+  PIN phy_data_out[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 47.055 16.470 51.055 ;
+    END
+  END phy_data_out[7]
+  PIN phy_data_out[8]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 36.335 30.640 40.335 31.240 ;
+    END
+  END phy_data_out[8]
+  PIN phy_data_out[9]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 30.640 4.000 31.240 ;
+    END
+  END phy_data_out[9]
+  PIN phy_valid_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 36.335 27.240 40.335 27.840 ;
+    END
+  END phy_valid_out
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.126000 ;
+    PORT
+      LAYER met3 ;
+        RECT 36.335 23.840 40.335 24.440 ;
+    END
+  END rst
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 34.690 38.165 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 34.500 38.165 ;
+      LAYER met1 ;
+        RECT 4.210 10.640 34.800 38.320 ;
+      LAYER met2 ;
+        RECT 4.230 46.775 9.470 47.055 ;
+        RECT 10.310 46.775 12.690 47.055 ;
+        RECT 13.530 46.775 15.910 47.055 ;
+        RECT 16.750 46.775 19.130 47.055 ;
+        RECT 19.970 46.775 22.350 47.055 ;
+        RECT 23.190 46.775 33.480 47.055 ;
+        RECT 4.230 4.280 33.480 46.775 ;
+        RECT 4.230 4.000 22.350 4.280 ;
+        RECT 23.190 4.000 33.480 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 43.840 36.335 44.705 ;
+        RECT 3.990 41.840 36.335 43.840 ;
+        RECT 4.400 40.440 36.335 41.840 ;
+        RECT 3.990 38.440 36.335 40.440 ;
+        RECT 4.400 37.040 36.335 38.440 ;
+        RECT 3.990 35.040 36.335 37.040 ;
+        RECT 4.400 33.640 35.935 35.040 ;
+        RECT 3.990 31.640 36.335 33.640 ;
+        RECT 4.400 30.240 35.935 31.640 ;
+        RECT 3.990 28.240 36.335 30.240 ;
+        RECT 4.400 26.840 35.935 28.240 ;
+        RECT 3.990 24.840 36.335 26.840 ;
+        RECT 4.400 23.440 35.935 24.840 ;
+        RECT 3.990 21.440 36.335 23.440 ;
+        RECT 4.400 20.040 35.935 21.440 ;
+        RECT 3.990 18.040 36.335 20.040 ;
+        RECT 4.400 16.640 35.935 18.040 ;
+        RECT 3.990 14.640 36.335 16.640 ;
+        RECT 3.990 13.240 35.935 14.640 ;
+        RECT 3.990 10.715 36.335 13.240 ;
+  END
+END eth_phy_1g
+END LIBRARY
+

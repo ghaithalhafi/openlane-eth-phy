@@ -1,0 +1,12 @@
+{
+  "DESIGN_NAME": "eth_phy_1g",
+  "VERILOG_FILES": [
+    "dir::rtl/phy_top_1g.v",
+    "dir::rtl/pcs_tx_8b10b.v"
+  ],
+  "CLOCK_PERIOD": 8,
+  "CLOCK_PORT": "clk",
+  "RUN_LEC": false,
+  "RUN_VERILATOR": false
+}
+
